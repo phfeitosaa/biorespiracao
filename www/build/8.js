@@ -1,15 +1,15 @@
 webpackJsonp([8],{
 
-/***/ 333:
+/***/ 332:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FollowerModule", function() { return FollowerModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FollowersModule", function() { return FollowersModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__following__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__followers__ = __webpack_require__(341);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,35 +20,35 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var FollowerModule = /** @class */ (function () {
-    function FollowerModule() {
+var FollowersModule = /** @class */ (function () {
+    function FollowersModule() {
     }
-    FollowerModule = __decorate([
+    FollowersModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__following__["a" /* Following */],
+                __WEBPACK_IMPORTED_MODULE_3__followers__["a" /* Followers */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__following__["a" /* Following */]),
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__followers__["a" /* Followers */]),
                 __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_3__following__["a" /* Following */]
+                __WEBPACK_IMPORTED_MODULE_3__followers__["a" /* Followers */]
             ]
         })
-    ], FollowerModule);
-    return FollowerModule;
+    ], FollowersModule);
+    return FollowersModule;
 }());
 
-//# sourceMappingURL=following.module.js.map
+//# sourceMappingURL=followers.module.js.map
 
 /***/ }),
 
-/***/ 343:
+/***/ 341:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Following; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Followers; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers__ = __webpack_require__(58);
@@ -64,9 +64,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var Following = /** @class */ (function () {
-    function Following(navCtrl, navParams, items, toastCtrl, loadingCtrl) {
-        // console.log(this.items.query());
+var Followers = /** @class */ (function () {
+    function Followers(navCtrl, navParams, items, toastCtrl, loadingCtrl) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.items = items;
@@ -114,12 +113,9 @@ var Following = /** @class */ (function () {
         items_here[9]['about'] = "Application Developer";
         items_here[9]['name'] = "Gokulananda Dash";
         items_here[9]['profilePic'] = "../../assets/img/users/user10.jpeg";
-        // console.log(items_here);
         this.currentItems = items_here;
-        // console.log(this.currentItems);
-        // this.currentItems = this.items.query()
     }
-    Following.prototype.unfollowSomeOne = function (user, slidingItem) {
+    Followers.prototype.followBack = function (user, slidingItem) {
         var _this = this;
         var loading = this.loadingCtrl.create({
             content: 'Please wait...'
@@ -128,7 +124,7 @@ var Following = /** @class */ (function () {
         setTimeout(function () {
             loading.dismiss();
             var toast = _this.toastCtrl.create({
-                message: "You have un-followed " + user['name'] + " successfully .",
+                message: "You have followed " + user['name'] + " successfully .",
                 duration: 2000,
                 position: 'top'
             });
@@ -136,17 +132,17 @@ var Following = /** @class */ (function () {
             toast.present();
         }, 2000);
     };
-    Following = __decorate([
+    Followers = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'following',template:/*ion-inline-start:"C:\Users\paulo\Ionic\BioRespiracao\src\pages\following\following.html"*/'\n<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{ \'Following\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n\n<ion-content>\n  <ion-list>\n    <ion-item-sliding class="cssForRoundSLidingItems" *ngFor="let item of currentItems" #slidingItem>\n      <ion-item>\n        <ion-avatar item-start>\n          <img [src]="item.profilePic">\n        </ion-avatar>\n        <h2>{{item.name}}</h2>\n        <p>{{item.about}}</p>\n      </ion-item>\n      <ion-item-options side="right">\n        <button ion-button  color="dark" icon-start (click)="unfollowSomeOne(item,slidingItem)">\n          <!--<ion-icon ios="ios-return-left" md="md-return-left"></ion-icon>-->\n          <ion-avatar item-start>\n            <img class="followings" src ="../../assets/img/users/followers.png">\n          </ion-avatar>\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"C:\Users\paulo\Ionic\BioRespiracao\src\pages\following\following.html"*/
+            selector: 'followers',template:/*ion-inline-start:"C:\Users\paulo\Ionic\BioRespiracao\src\pages\followers\followers.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{ \'Followers\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content>\n  <ion-list>\n    <ion-item-sliding class="cssForRoundSLidingItems" *ngFor="let item of currentItems" #slidingItem>\n      <ion-item>\n        <ion-avatar item-start>\n          <img [src]="item.profilePic">\n        </ion-avatar>\n        <h2>{{item.name}}</h2>\n        <p>{{item.about}}</p>\n      </ion-item>\n      <ion-item-options side="right">\n        <button ion-button color="dark" icon-start (click)="followBack(item,slidingItem)">\n          <ion-avatar item-start>\n            <img class="followers" src="../../assets/img/users/followings.png">\n          </ion-avatar>\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"C:\Users\paulo\Ionic\BioRespiracao\src\pages\followers\followers.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* Items */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ToastController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */]])
-    ], Following);
-    return Following;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* Items */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */]])
+    ], Followers);
+    return Followers;
 }());
 
-//# sourceMappingURL=following.js.map
+//# sourceMappingURL=followers.js.map
 
 /***/ })
 

@@ -1,15 +1,15 @@
 webpackJsonp([2],{
 
-/***/ 339:
+/***/ 338:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProfilePageModule", function() { return ProfilePageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewsfeedModule", function() { return NewsfeedModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__profile__ = __webpack_require__(349);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__newsfeed__ = __webpack_require__(347);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,40 +20,38 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ProfilePageModule = /** @class */ (function () {
-    function ProfilePageModule() {
+var NewsfeedModule = /** @class */ (function () {
+    function NewsfeedModule() {
     }
-    ProfilePageModule = __decorate([
+    NewsfeedModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__profile__["a" /* ProfilePage */],
+                __WEBPACK_IMPORTED_MODULE_3__newsfeed__["a" /* NewsFeed */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__profile__["a" /* ProfilePage */]),
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__newsfeed__["a" /* NewsFeed */]),
                 __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_3__profile__["a" /* ProfilePage */]
+                __WEBPACK_IMPORTED_MODULE_3__newsfeed__["a" /* NewsFeed */]
             ]
         })
-    ], ProfilePageModule);
-    return ProfilePageModule;
+    ], NewsfeedModule);
+    return NewsfeedModule;
 }());
 
-//# sourceMappingURL=profile.module.js.map
+//# sourceMappingURL=newsfeed.module.js.map
 
 /***/ }),
 
-/***/ 349:
+/***/ 347:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfilePage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewsFeed; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_camera__ = __webpack_require__(225);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers__ = __webpack_require__(58);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -66,134 +64,72 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-
-var ProfilePage = /** @class */ (function () {
-    function ProfilePage(navCtrl, viewCtrl, formBuilder, camera, users, toastCtrl, loadingCtrl) {
+var NewsFeed = /** @class */ (function () {
+    function NewsFeed(navCtrl, modalCtrl, items, toastCtrl) {
         this.navCtrl = navCtrl;
-        this.viewCtrl = viewCtrl;
-        this.camera = camera;
-        this.users = users;
+        this.modalCtrl = modalCtrl;
+        this.items = items;
         this.toastCtrl = toastCtrl;
-        this.loadingCtrl = loadingCtrl;
-        this.isDisabled = true;
-        this.caption_name = "EDIT";
-        this.account = {
-            user_name: 'arnoldschwarzenegger',
-            user_email: 'arnold.sc@terminator.net',
-            user_password: 'password',
-            user_state: 'California',
-            profile_image: 'asset/img/src/img.jpg',
-            full_name: 'Arnold Schwarzenegger',
-            about: 'Former Governor of California'
-        };
-        this.form = formBuilder.group({
-            image: [''], user_name: [''], user_password: [''], user_email: [''], user_state: [''],
-        });
-        this.profileDetails = [
+        this.press = 0;
+        this.likes = 10;
+        this.cardItems = [
             {
-                full_name: "Arnold Schwarzenegger",
-                about: "Former Governor of California",
-                followers: 230,
-                following: 170
+                user_avtar: 'assets/img/marty-avatar.png',
+                user_name: 'Marty McFly',
+                date: 'November 5, 1955',
+                image: 'assets/img/advance-card-bttf.png',
+                content: 'Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.',
             },
+            {
+                user_avtar: 'assets/img/sarah-avatar.png.jpeg',
+                user_name: 'Sarah Connor',
+                date: 'May 12, 1984',
+                image: 'assets/img/advance-card-tmntr.jpg',
+                content: 'I face the unknown future, with a sense of hope. Because if a machine, a Terminator, can learn the value of human life, maybe we can too.'
+            },
+            {
+                user_avtar: 'assets/img/ian-avatar.png',
+                user_name: 'Dr. Ian Malcolm',
+                date: 'June 28, 1990',
+                image: 'assets/img/advance-card-jp.jpg',
+                content: 'Your scientists were so preoccupied with whether or not they could, that they didn\'t stop to think if they should.'
+            }
         ];
     }
-    ProfilePage.prototype.openFollowers = function () {
-        this.navCtrl.push('Followers');
-    };
-    ProfilePage.prototype.openFollowing = function () {
-        this.navCtrl.push('Following');
-    };
-    ProfilePage.prototype.changedSmtng = function () {
-        this.caption_name = "SAVE";
-    };
-    ProfilePage.prototype.editProfile = function () {
+    NewsFeed.prototype.addNewsFeed = function () {
         var _this = this;
-        if (this.caption_name == "EDIT") {
-            this.isDisabled = false;
-            this.caption_name = "CANCEL";
-        }
-        else if (this.caption_name == "SAVE") {
-            console.log(this.isReadyToSave);
-            if (!(this.account.user_name && this.account.user_email && this.account.user_password && this.account.user_state)) {
-                var toast = this.toastCtrl.create({
-                    message: "Validation errors !",
-                    duration: 2000,
-                    position: 'top'
-                });
-                toast.present();
+        var addModal = this.modalCtrl.create('NewsfeedCreate');
+        addModal.onDidDismiss(function (item) {
+            if (item) {
+                console.log(item);
+                _this.cardItems.push(item);
             }
-            else {
-                var loading_1 = this.loadingCtrl.create({
-                    content: 'Please wait...'
-                });
-                loading_1.present();
-                setTimeout(function () {
-                    loading_1.dismiss();
-                    var toast = _this.toastCtrl.create({
-                        message: "You have successfully updated your details .",
-                        duration: 2000,
-                        position: 'top'
-                    });
-                    _this.caption_name = "EDIT";
-                    _this.isDisabled = true;
-                    toast.present();
-                }, 2000);
-            }
-        }
-        else if (this.caption_name == "CANCEL") {
-            this.isDisabled = true;
-            this.caption_name = "EDIT";
-        }
+        });
+        addModal.present();
     };
-    ProfilePage.prototype.ionViewDidLoad = function () {
-    };
-    ProfilePage.prototype.getPicture = function () {
-        var _this = this;
-        if (__WEBPACK_IMPORTED_MODULE_3__ionic_native_camera__["a" /* Camera */]['installed']()) {
-            this.camera.getPicture({
-                destinationType: this.camera.DestinationType.DATA_URL,
-                targetWidth: 96,
-                targetHeight: 96
-            }).then(function (data) {
-                _this.form.patchValue({ 'image': 'data:image/jpg;base64,' + data });
-            }, function (err) {
-                alert('Unable to take photo');
+    NewsFeed.prototype.dblClickEvent = function (ev, user_name) {
+        this.press++;
+        if (this.press == 2) {
+            var toast = this.toastCtrl.create({
+                message: "You have liked this.",
+                duration: 2000,
+                position: 'top'
             });
+            toast.present();
+            this.press = 0;
+            this.likes++;
         }
-        else {
-            this.fileInput.nativeElement.click();
-        }
     };
-    ProfilePage.prototype.processWebImage = function (event) {
-        var _this = this;
-        var reader = new FileReader();
-        reader.onload = function (readerEvent) {
-            var imageData = readerEvent.target.result;
-            _this.form.patchValue({ 'image': imageData });
-        };
-        reader.readAsDataURL(event.target.files[0]);
-    };
-    ProfilePage.prototype.getProfileImageStyle = function () {
-        return 'url(' + this.form.controls['image'].value + ')';
-    };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])('fileInput'),
-        __metadata("design:type", Object)
-    ], ProfilePage.prototype, "fileInput", void 0);
-    ProfilePage = __decorate([
+    NewsFeed = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'profile-page',template:/*ion-inline-start:"C:\Users\paulo\Ionic\BioRespiracao\src\pages\profile\profile.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{ \'Profile\' | translate }}</ion-title>\n    <ion-buttons right>\n      <button ion-button icon-only (click)="editProfile()" class="editSaveToggleBtn">{{caption_name}}</button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content>\n  <div class="fixed-content">\n\n    <form *ngIf="form" [formGroup]="form" (ngSubmit)="saveProfile()">\n      <div class="upperDiv">\n        <input type="file" #fileInput style="visibility: hidden; height: 0px" name="files[]"\n               (change)="processWebImage($event)"/>\n        <div class="profile-image-wrapper" (click)="getPicture()">\n          <div class="profile-image-placeholder" *ngIf="!this.form.controls.image.value">\n            <ion-icon name="ios-camera-outline" class="ios-camera-outline" md="ios-camera-outline" style="color: white !important"></ion-icon>\n            <div>\n            </div>\n          </div>\n          <div class="profile-image" [style.backgroundImage]="getProfileImageStyle()"\n               *ngIf="this.form.controls.image.value"></div>\n        </div>\n\n        <h3 class="full_name">{{profileDetails[0].full_name}}</h3>\n        <h3 class="userDetails">{{profileDetails[0].about}}</h3>\n\n        <ion-item (click)="openFollowers()" no-lines style="background: #16a085 !important;">\n          <ion-avatar item-start>\n            <img src="../../assets/img/users/followings.png">\n          </ion-avatar>\n          <h3 style="color: white">Following</h3>\n          <ion-badge class="amount" item-end>{{profileDetails[0].following}}</ion-badge>\n        </ion-item>\n        <ion-item no-lines (click)="openFollowing()" style="background: #16a085 !important;">\n          <ion-avatar item-start>\n            <img src="../../assets/img/users/followers.png">\n          </ion-avatar>\n          <h3 style="color: white">Follower</h3>\n          <ion-badge class="amount" item-end>{{profileDetails[0].followers}}</ion-badge>\n        </ion-item>\n      </div>\n      <ion-list style="padding: 20px !important; border-bottom: 0.55px solid #fff; !important;">\n        <ion-item style="border-top: 0.55px solid #fff; !important;">\n          <ion-label class="label_here">User Name :</ion-label>\n          <ion-input class="inputFields" type="text" formControlName="user_name" (keyup)="changedSmtng()"\n                     disabled="{{isDisabled}}"\n                     [(ngModel)]="account.user_name"></ion-input>\n        </ion-item>\n\n        <ion-item>\n          <ion-label class="label_here">Email :</ion-label>\n          <ion-input class="inputFields" type="email" formControlName="user_email" (keyup)="changedSmtng()"\n                     disabled="{{isDisabled}}"\n                     [(ngModel)]="account.user_email"></ion-input>\n        </ion-item>\n\n        <ion-item>\n          <ion-label class="label_here">Password :</ion-label>\n          <ion-input class="inputFields" type="password" formControlName="user_password" (keyup)="changedSmtng()"\n                     disabled="{{isDisabled}}"\n                     [(ngModel)]="account.user_password"></ion-input>\n        </ion-item>\n\n\n        <ion-item style="border-bottom: 0.55px solid #fff; !important;">\n          <ion-label class="label_here">State :</ion-label>\n          <ion-input class="inputFields" type="text" formControlName="user_state" (keyup)="changedSmtng()"\n                     disabled="{{isDisabled}}"\n                     [(ngModel)]="account.user_state"></ion-input>\n        </ion-item>\n\n      </ion-list>\n    </form>\n  </div>\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\paulo\Ionic\BioRespiracao\src\pages\profile\profile.html"*/
+            selector: 'news-feed',template:/*ion-inline-start:"C:\Users\paulo\Ionic\BioRespiracao\src\pages\newsfeed\newsfeed.html"*/'\n<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{ \'News Feed\' | translate }}</ion-title>\n    <ion-buttons right>\n      <button ion-button icon-only (click)="addNewsFeed()" ><ion-icon name="add"></ion-icon></button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content>\n\n  <ion-card *ngFor="let item of cardItems">\n\n    <ion-item>\n      <ion-avatar item-start>\n        <img [src]="item.user_avtar">\n      </ion-avatar>\n      <h2>{{item.user_name}}</h2>\n      <p>{{item.date}}</p>\n    </ion-item>\n\n    <img (tap)="dblClickEvent($event,item.user_name)"  [src]="item.image">\n\n    <ion-card-content>\n      <p>{{item.content}}</p>\n    </ion-card-content>\n\n    <ion-row>\n      <ion-col>\n        <button ion-button color="primary" clear small icon-start>\n          <ion-icon name=\'thumbs-up\'></ion-icon>\n          {{likes}} Likes\n        </button>\n      </ion-col>\n      <ion-col>\n        <button ion-button color="primary" clear small icon-start>\n          <ion-icon name=\'text\'></ion-icon>\n          4 Comments\n        </button>\n      </ion-col>\n      <ion-col center text-center>\n        <ion-note>\n          11h ago\n        </ion-note>\n      </ion-col>\n    </ion-row>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"C:\Users\paulo\Ionic\BioRespiracao\src\pages\newsfeed\newsfeed.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* ViewController */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */],
-            __WEBPACK_IMPORTED_MODULE_3__ionic_native_camera__["a" /* Camera */], __WEBPACK_IMPORTED_MODULE_4__providers__["d" /* User */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ToastController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */]])
-    ], ProfilePage);
-    return ProfilePage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */], __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* Items */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
+    ], NewsFeed);
+    return NewsFeed;
 }());
 
-//# sourceMappingURL=profile.js.map
+//# sourceMappingURL=newsfeed.js.map
 
 /***/ })
 

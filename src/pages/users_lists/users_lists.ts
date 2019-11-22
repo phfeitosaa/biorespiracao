@@ -55,70 +55,58 @@ export class UsersPage {
   /**
    * Navigate to the detail page for this item.
    */
-  openItem(item: Item) {
-    this.navCtrl.push('ItemDetailPage', {
-      item: item
-    });
+  abrirCap1() {
+    this.navCtrl.push('Followers');
   }
 
-
-  addItem() {
-    let addModal = this.modalCtrl.create('ItemCreatePage');
-    addModal.onDidDismiss(item => {
-      if (item) {
-        console.log(item);
-        this.items.add(item);
-      }
-    })
-    addModal.present();
+  abrirCap2() {
+    this.navCtrl.push('Followers');
+  }
+  abrirCap3() {
+    this.navCtrl.push('Followers');
   }
 
-  pressEvent(ev) {
-    this.press++;
-    this.vibration.vibrate(150);
-    let toast = this.toastCtrl.create({
-      message: "please slide to get the options .",
-      duration: 2000,
-      position: 'top'
-    });
-    toast.present();
+  abrirCap4() {
+    this.navCtrl.push('Followers');
   }
 
+  abrirCap5() {
+    this.navCtrl.push('Followers');
+  }
 
-  deleteItem(item, slidingItem: ItemSliding) {
+  abrirCap6() {
+    this.navCtrl.push('Followers');
+  }
 
-    let alert = this.alertCtrl.create({
-      title: 'Confirm Delete',
-      message: 'Do you want to delete this user?',
-      buttons: [
-        {
-          text: 'Cancel',
-          role: 'cancel',
-          handler: () => {
-            slidingItem.close();
-          }
-        },
-        {
-          text: 'Yes',
-          handler: () => {
-            let loading = this.loadingCtrl.create({
-              content: 'Please wait...'
-            });
-            loading.present();
-            setTimeout(() => {
-              loading.dismiss();
-              this.items.delete(item);
-              let toast = this.toastCtrl.create({
-                message: "You have deleted " + item['name'] + " successfully .",
-                duration: 2000,
-                position: 'top'
-              });
-              toast.present();
-            }, 1000);
-          }
-        }
-      ]
-    });
-    alert.present();
+  abrirCap7() {
+    this.navCtrl.push('Followers');
+  }
+
+  abrirCap8() {
+    this.navCtrl.push('Followers');
+  }
+
+  abrirCap9() {
+    this.navCtrl.push('Followers');
+  }
+
+  abrirCap10() {
+    this.navCtrl.push('Followers');
+  }
+
+  abrirCap11() {
+    this.navCtrl.push('Followers');
+  }
+
+  abrirCap12() {
+    this.navCtrl.push('Followers');
+  }
+
+  abrirCap13() {
+    this.navCtrl.push('Followers');
+  }
+
+  abrirCap14() {
+    this.navCtrl.push('Followers');
   }
 }

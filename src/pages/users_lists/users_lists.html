@@ -6,38 +6,100 @@
       </button>
     </ion-buttons>
     <ion-title>Sumário</ion-title>
-    <ion-buttons right>
-      <button ion-button icon-only (click)="addItem()">
-        <ion-icon name="add"></ion-icon>
-      </button>
-    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content>
-  <ion-searchbar (ionInput)="getItems($event)" placeholder="{{ 'Search Users' | translate }}"></ion-searchbar>
   <ion-list>
     
-    <ion-item (click)="openItem(item)" (press)="pressEvent($event)">
-      
+    <ion-item (click)="abrirCap1()">
+    
       <h2>CONTEXTUALIZANDO A RESPIRAÇÃO<br> AERÓBIA </h2>
       <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>
     </ion-item>
 
-    <ion-item (click)="openItem(item)" (press)="pressEvent($event)">
+    <ion-item (click)="abrirCap2()">
         
-      <h2>titulo 2</h2>
+      <h2>DEFINIÇÕES IMPORTANTES SOBRE <br> RESPIRAÇÃO NA FORMA DE PERGUNTAS </h2>
       <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>
     </ion-item>
 
-    <!-- Copiar essas linhas para colocar todos os capítulos do trabalho na lista: -->
-    <!-- <ion-item (click)="openItem(item)" (press)="pressEvent($event)">
+    <ion-item (click)="abrirCap3()">
         
-      <h2>titulo 2</h2>
+      <h2>ETAPAS DA RESPIRAÇÃO AERÓBIA</h2>
       <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>
-    </ion-item> -->
+    </ion-item>
+
+    <ion-item (click)="abrirCap4()">
+        
+      <h2>VISÃO GERAL DA RESPIRAÇÃO <br> AERÓBIA </h2>
+      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>
+    </ion-item>
+
+    <ion-item (click)="abrirCap5()">
+        
+      <h2>VISÃO GERAL DA GLICÓLISE </h2>
+      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>
+    </ion-item>
+
+    <ion-item (click)="abrirCap6()">
+        
+      <h2>VISÃO GERAL DO CICLO DE KREBES<br> OU DO ÁCIDO CÍTRICO </h2>
+      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>
+    </ion-item>
+
+    <ion-item (click)="abrirCap7()">
+        
+      <h2>VISÃO GERAL DA CADEIA <br> TRANSPORTADORA DE ELÉTRONS  </h2>
+      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>
+    </ion-item>
+
+    <ion-item (click)="abrirCap8()">
+        
+      <h2>PRODUÇÃO DE ATP A PARTIR <br> DA OXIDAÇÃO COMPLETA DA GLICOSE</h2>
+      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>
+    </ion-item>
+
+    <ion-item (click)="abrirCap9()">
+        
+      <h2>MITOCÔNDRIA</h2>
+      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>
+    </ion-item>
+
+    <ion-item (click)="abrirCap10()">
+        
+      <h2>VISÃO DETALHADA DA GLICÓLISE </h2>
+      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>
+    </ion-item>
+
+    <ion-item (click)="abrirCap11()">
+        
+      <h2>VISÃO DETALHADA DO CICLO DE KREBS </h2>
+      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>
+    </ion-item>
+
+    <ion-item (click)="abrirCap12()">
+        
+      <h2>VISÃO DETALHADA DA FOSFORILAÇÃO<br> OXIDATIVA </h2>
+      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>
+    </ion-item>
+
+    <ion-item (click)="abrirCap13()">
+        
+      <h2>MONTANDO A RESPIRAÇÃO AERÓBIA </h2>
+      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>
+    </ion-item>
+
+    <ion-item (click)="abrirCap14()">
+        
+      <h2>TESTES</h2>
+      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>
+    </ion-item>
+
   </ion-list>
+
+  
 </ion-content>
 
 

@@ -1,15 +1,15 @@
 webpackJsonp([7],{
 
-/***/ 334:
+/***/ 333:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ItemCreatePageModule", function() { return ItemCreatePageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FollowerModule", function() { return FollowerModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__item_create__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__following__ = __webpack_require__(342);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,39 +20,38 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ItemCreatePageModule = /** @class */ (function () {
-    function ItemCreatePageModule() {
+var FollowerModule = /** @class */ (function () {
+    function FollowerModule() {
     }
-    ItemCreatePageModule = __decorate([
+    FollowerModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__item_create__["a" /* ItemCreatePage */],
+                __WEBPACK_IMPORTED_MODULE_3__following__["a" /* Following */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__item_create__["a" /* ItemCreatePage */]),
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__following__["a" /* Following */]),
                 __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_3__item_create__["a" /* ItemCreatePage */]
+                __WEBPACK_IMPORTED_MODULE_3__following__["a" /* Following */]
             ]
         })
-    ], ItemCreatePageModule);
-    return ItemCreatePageModule;
+    ], FollowerModule);
+    return FollowerModule;
 }());
 
-//# sourceMappingURL=item-create.module.js.map
+//# sourceMappingURL=following.module.js.map
 
 /***/ }),
 
-/***/ 344:
+/***/ 342:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemCreatePage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Following; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__ = __webpack_require__(225);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers__ = __webpack_require__(58);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -65,84 +64,89 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-var ItemCreatePage = /** @class */ (function () {
-    function ItemCreatePage(navCtrl, viewCtrl, formBuilder, camera) {
-        var _this = this;
+var Following = /** @class */ (function () {
+    function Following(navCtrl, navParams, items, toastCtrl, loadingCtrl) {
+        // console.log(this.items.query());
         this.navCtrl = navCtrl;
-        this.viewCtrl = viewCtrl;
-        this.camera = camera;
-        this.form = formBuilder.group({
-            profilePic: [''],
-            name: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required],
-            about: ['']
-        });
-        // Watch the form for changes, and
-        this.form.valueChanges.subscribe(function (v) {
-            _this.isReadyToSave = _this.form.valid;
-        });
+        this.navParams = navParams;
+        this.items = items;
+        this.toastCtrl = toastCtrl;
+        this.loadingCtrl = loadingCtrl;
+        var items_here = [
+            ['input1', 'input2'],
+            ['input3', 'input4'],
+            ['input5', 'input6'],
+            ['input7', 'input8'],
+            ['input9', 'input10'],
+            ['input11', 'input12'],
+            ['input13', 'input14'],
+            ['input15', 'input16'],
+            ['input17', 'input18'],
+            ['input19', 'input20'],
+        ];
+        items_here[2]['about'] = "Application Developer";
+        items_here[2]['name'] = "Sibabrat Swain";
+        items_here[2]['profilePic'] = "../../assets/img/users/user1.jpg";
+        items_here[0]['about'] = "Co-founder and CTO";
+        items_here[0]['name'] = "Devadatta Sahoo ";
+        items_here[0]['profilePic'] = "../../assets/img/users/user2.png";
+        items_here[1]['about'] = "Software Developer";
+        items_here[1]['name'] = "Pitabas Behera";
+        items_here[1]['profilePic'] = "../../assets/img/users/user3.jpeg";
+        items_here[3]['about'] = "Human Resources Executive ";
+        items_here[3]['name'] = "Rutuparna Singh";
+        items_here[3]['profilePic'] = "../../assets/img/users/user4.jpeg";
+        items_here[4]['about'] = "Application Developer";
+        items_here[4]['name'] = "Ashutosh kumar choubey";
+        items_here[4]['profilePic'] = "../../assets/img/users/user5.jpeg";
+        items_here[5]['about'] = "Electric Utilities Consultant";
+        items_here[5]['name'] = "Manish Mishra";
+        items_here[5]['profilePic'] = "../../assets/img/users/user6.jpeg";
+        items_here[6]['about'] = "Co Founder at FDSHive";
+        items_here[6]['name'] = "Bikash Sahoo";
+        items_here[6]['profilePic'] = "../../assets/img/users/user7.jpeg";
+        items_here[7]['about'] = "Business Consultant; Web Analyst";
+        items_here[7]['name'] = "Monisha K";
+        items_here[7]['profilePic'] = "../../assets/img/users/user8.jpeg";
+        items_here[8]['about'] = "Software Developer";
+        items_here[8]['name'] = "Nambrata Mital";
+        items_here[8]['profilePic'] = "../../assets/img/users/user9.jpeg";
+        items_here[9]['about'] = "Application Developer";
+        items_here[9]['name'] = "Gokulananda Dash";
+        items_here[9]['profilePic'] = "../../assets/img/users/user10.jpeg";
+        // console.log(items_here);
+        this.currentItems = items_here;
+        // console.log(this.currentItems);
+        // this.currentItems = this.items.query()
     }
-    ItemCreatePage.prototype.ionViewDidLoad = function () {
-    };
-    ItemCreatePage.prototype.getPicture = function () {
+    Following.prototype.unfollowSomeOne = function (user, slidingItem) {
         var _this = this;
-        if (__WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__["a" /* Camera */]['installed']()) {
-            this.camera.getPicture({
-                destinationType: this.camera.DestinationType.DATA_URL,
-                targetWidth: 96,
-                targetHeight: 96
-            }).then(function (data) {
-                _this.form.patchValue({ 'profilePic': 'data:image/jpg;base64,' + data });
-            }, function (err) {
-                alert('Unable to take photo');
+        var loading = this.loadingCtrl.create({
+            content: 'Please wait...'
+        });
+        loading.present();
+        setTimeout(function () {
+            loading.dismiss();
+            var toast = _this.toastCtrl.create({
+                message: "You have un-followed " + user['name'] + " successfully .",
+                duration: 2000,
+                position: 'top'
             });
-        }
-        else {
-            this.fileInput.nativeElement.click();
-        }
+            slidingItem.close();
+            toast.present();
+        }, 2000);
     };
-    ItemCreatePage.prototype.processWebImage = function (event) {
-        var _this = this;
-        var reader = new FileReader();
-        reader.onload = function (readerEvent) {
-            var imageData = readerEvent.target.result;
-            _this.form.patchValue({ 'profilePic': imageData });
-        };
-        reader.readAsDataURL(event.target.files[0]);
-    };
-    ItemCreatePage.prototype.getProfileImageStyle = function () {
-        return 'url(' + this.form.controls['profilePic'].value + ')';
-    };
-    /**
-     * The user cancelled, so we dismiss without sending data back.
-     */
-    ItemCreatePage.prototype.cancel = function () {
-        this.viewCtrl.dismiss();
-    };
-    /**
-     * The user is done and wants to create the item, so return it
-     * back to the presenter.
-     */
-    ItemCreatePage.prototype.done = function () {
-        if (!this.form.valid) {
-            return;
-        }
-        this.viewCtrl.dismiss(this.form.value);
-    };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])('fileInput'),
-        __metadata("design:type", Object)
-    ], ItemCreatePage.prototype, "fileInput", void 0);
-    ItemCreatePage = __decorate([
+    Following = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-item-create',template:/*ion-inline-start:"C:\Users\paulo\Ionic\BioRespiracao\src\pages\item-create\item-create.html"*/'<ion-header>\n\n  <ion-navbar color="primary">\n    <ion-title>{{ \'New User\' | translate }}</ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="cancel()">\n        <span color="primary" showWhen="ios">\n          {{ \'CANCEL_BUTTON\' | translate }}\n        </span>\n        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button (click)="done()" [disabled]="!isReadyToSave" strong>\n        <span color="primary" showWhen="ios">\n          {{ \'DONE_BUTTON\' | translate }}\n        </span>\n        <ion-icon name="md-checkmark" showWhen="core,android,windows"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <form *ngIf="form" [formGroup]="form" (ngSubmit)="createItem()">\n\n    <input type="file" #fileInput style="visibility: hidden; height: 0px" name="files[]" (change)="processWebImage($event)" />\n    <div class="profile-image-wrapper" (click)="getPicture()">\n      <div class="profile-image-placeholder" *ngIf="!this.form.controls.profilePic.value">\n        <ion-icon name="ios-camera-outline" md="ios-camera-outline"></ion-icon>\n        <div>\n          {{ \'ITEM_CREATE_CHOOSE_IMAGE\' | translate }}\n        </div>\n      </div>\n      <div class="profile-image" [style.backgroundImage]="getProfileImageStyle()" *ngIf="this.form.controls.profilePic.value"></div>\n    </div>\n\n    <ion-list>\n      <ion-item>\n        <ion-input type="text" placeholder="{{ \'ITEM_NAME_PLACEHOLDER\' | translate }}" formControlName="name"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-input type="text" placeholder="{{ \'ITEM_ABOUT_PLACEHOLDER\' | translate }}" formControlName="about"></ion-input>\n      </ion-item>\n    </ion-list>\n\n  </form>\n</ion-content>\n'/*ion-inline-end:"C:\Users\paulo\Ionic\BioRespiracao\src\pages\item-create\item-create.html"*/
+            selector: 'following',template:/*ion-inline-start:"C:\Users\paulo\Ionic\BioRespiracao\src\pages\following\following.html"*/'\n<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{ \'Following\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n\n<ion-content>\n  <ion-list>\n    <ion-item-sliding class="cssForRoundSLidingItems" *ngFor="let item of currentItems" #slidingItem>\n      <ion-item>\n        <ion-avatar item-start>\n          <img [src]="item.profilePic">\n        </ion-avatar>\n        <h2>{{item.name}}</h2>\n        <p>{{item.about}}</p>\n      </ion-item>\n      <ion-item-options side="right">\n        <button ion-button  color="dark" icon-start (click)="unfollowSomeOne(item,slidingItem)">\n          <!--<ion-icon ios="ios-return-left" md="md-return-left"></ion-icon>-->\n          <ion-avatar item-start>\n            <img class="followings" src ="../../assets/img/users/followers.png">\n          </ion-avatar>\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"C:\Users\paulo\Ionic\BioRespiracao\src\pages\following\following.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["o" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__["a" /* Camera */]])
-    ], ItemCreatePage);
-    return ItemCreatePage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* Items */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */]])
+    ], Following);
+    return Following;
 }());
 
-//# sourceMappingURL=item-create.js.map
+//# sourceMappingURL=following.js.map
 
 /***/ })
 
