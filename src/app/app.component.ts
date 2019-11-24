@@ -10,53 +10,99 @@ import {Settings} from '../providers';
   selector: 'side-main-menu',
   template: `<ion-menu [content]="content">
       <ion-header class="headerMAin">
-        <ion-toolbar color="primary">
-          <ion-buttons left>
-            <button class="createUser" ion-button icon-only menuClose (click)="openPage(pages[4])">
-              <ion-icon name="ios-create-outline" md="ios-create-outline" style="color:  #1ABC9C !important;"></ion-icon>
-            </button>
-          </ion-buttons>
+        <ion-toolbar color="white">
+        <ion-list class="headerMAin">
+        <ion-item style="background: white !important;border-bottom: 0.55px solid #000000!important;">
+          <ion-list class="logoImage" menuClose (click)="openPage(pages[4])">
+            <div class="circle-pic" text-center #profilePic [style.background-image]="'url(../../assets/img/mestrado-logo.png)'"></div>
+            <!--<img class="circle-pic" src="../../assets/img/mestrado.jpg"/>-->
+          </ion-list>
+          <h1 class="userName">Bio Respiração</h1>
+          <h3 class="userDetails">Antonio Delmário Alves dos Santos</h3>
+        </ion-item>
+      </ion-list>
         </ion-toolbar>
       </ion-header>
 
       <ion-content class="sideMenuIoncContent">
         
-        <ion-list class="headerMAin">
-          <ion-item style="background: black !important;border-bottom: 0.55px solid #000000!important;">
-            <ion-list class="logoImage" menuClose (click)="openPage(pages[4])">
-              <div class="circle-pic" text-center #profilePic [style.background-image]="'url(../../assets/img/advance-card-tmntr.jpg)'"></div>
-              <!--<img class="circle-pic" src="../../assets/img/advance-card-tmntr.jpg"/>-->
-            </ion-list>
-            <h3 class="userName">Arnold Schwarzenegger</h3>
-            <h3 class="userDetails">Former Governor of California</h3>
-          </ion-item>
-        </ion-list>
-        
         <ion-list>
           
-          <button menuClose ion-item no-lines style="border-top: 0.55px solid #383838; !important;"
-                  [class.activeHIghlight]="checkActive(pages[5])" (click)="openPage(pages[5])" class="buttonSIdeBAr">
-            <ion-icon ios="ios-list-box-outline" class="sidebarCss" md="ios-list-box-outline"></ion-icon>
-            List Users
-          </button>
-          <button menuClose ion-item no-lines [class.activeHIghlight]="checkActive(pages[3])"
-                  (click)="openPage(pages[3])" class="buttonSIdeBAr">
-            <ion-icon ios="ios-notifications-outline" class="sidebarCss" md="ios-notifications-outline"></ion-icon>
-            News Feed
-          </button>
+        <button menuClose ion-item no-lines style="border-top: 0.55px solid #383838; !important;"
+                [class.activeHIghlight]="checkActive(pages[0])" (click)="openPage(pages[0])" class="buttonSIdeBAr">
+                <h6>SUMÁRIO</h6>
+        </button>
+
+        <button menuClose ion-item no-lines [class.activeHIghlight]="checkActive(pages[1])"
+                (click)="openPage(pages[1])" class="buttonSIdeBAr">
+                <h6>CONTEXTUALIZANDO A RESPIRAÇÃO <br> AERÓBIA</h6>
+        </button>
+
+        <button menuClose ion-item no-lines [class.activeHIghlight]="checkActive(pages[2])"
+                (click)="openPage(pages[2])" class="buttonSIdeBAr">
+                <h6>DEFINIÇÕES IMPORTANTES SOBRE <br> RESPIRAÇÃO</h6>
+        </button>
+
+        <button menuClose ion-item no-lines [class.activeHIghlight]="checkActive(pages[3])"
+                (click)="openPage(pages[3])" class="buttonSIdeBAr">
+                <h6>ETAPAS DA RESPIRAÇÃO AERÓBIA</h6>
+        </button>
+
+        <button menuClose ion-item no-lines [class.activeHIghlight]="checkActive(pages[4])"
+                (click)="openPage(pages[4])" class="buttonSIdeBAr">
+                <h6>VISÃO GERAL DA RESPIRAÇÃO <br> AERÓBIA </h6>
+        </button>
+
+        <button menuClose ion-item no-lines [class.activeHIghlight]="checkActive(pages[5])"
+                (click)="openPage(pages[5])" class="buttonSIdeBAr">
+                <h6>VISÃO GERAL DA GLICÓLISE</h6>
+        </button>
+
+        <button menuClose ion-item no-lines [class.activeHIghlight]="checkActive(pages[6])"
+                (click)="openPage(pages[6])" class="buttonSIdeBAr">
+                <h6>VISÃO GERAL DO CICLO DE KREBES<br> OU DO ÁCIDO CÍTRICO</h6>
+        </button>
+
+        <button menuClose ion-item no-lines [class.activeHIghlight]="checkActive(pages[7])"
+                (click)="openPage(pages[7])" class="buttonSIdeBAr">
+                <h6>VISÃO GERAL DA CADEIA <br> TRANSPORTADORA DE ELÉTRONS</h6>
+        </button>
+
+        <button menuClose ion-item no-lines [class.activeHIghlight]="checkActive(pages[8])"
+                (click)="openPage(pages[8])" class="buttonSIdeBAr">
+                <h6>PRODUÇÃO DE ATP A PARTIR <br> DA OXIDAÇÃO COMPLETA DA GLICOSE</h6>
+        </button>
+
+        <button menuClose ion-item no-lines [class.activeHIghlight]="checkActive(pages[9])"
+                (click)="openPage(pages[9])" class="buttonSIdeBAr">
+                <h6>MITOCÔNDRIA</h6>
+        </button>
+
+        <button menuClose ion-item no-lines [class.activeHIghlight]="checkActive(pages[10])"
+                (click)="openPage(pages[10])" class="buttonSIdeBAr">
+                <h6>VISÃO DETALHADA DA GLICÓLISE</h6>
+        </button>
+
+        <button menuClose ion-item no-lines [class.activeHIghlight]="checkActive(pages[11])"
+                (click)="openPage(pages[11])" class="buttonSIdeBAr">
+                <h6>VISÃO DETALHADA DO CICLO DE KREBS</h6>
+        </button>
+
+        <button menuClose ion-item no-lines [class.activeHIghlight]="checkActive(pages[12])"
+                (click)="openPage(pages[12])" class="buttonSIdeBAr">
+                <h6>VISÃO DETALHADA DA FOSFORILAÇÃO<br> OXIDATIVA</h6>
+        </button>
+
+        <button menuClose ion-item no-lines [class.activeHIghlight]="checkActive(pages[13])"
+                (click)="openPage(pages[13])" class="buttonSIdeBAr">
+                <h6>MONTANDO A RESPIRAÇÃO AERÓBIA</h6>
+        </button>
+
+        <button menuClose ion-item no-lines [class.activeHIghlight]="checkActive(pages[14])"
+                (click)="openPage(pages[14])" class="buttonSIdeBAr">
+                <h6>TESTES</h6>
+        </button>
           
-          <button menuClose ion-item no-lines [class.activeHIghlight]="checkActive(pages[4])"
-                  (click)="openPage(pages[4])" class="buttonSIdeBAr">
-            <ion-icon ios="ios-person-outline" class="sidebarCss" md="ios-person-outline"></ion-icon>
-            Profile
-          </button>
-          
-          <button menuClose no-lines style="border-bottom: 0.55px solid #383838; !important;" ion-item
-                  [class.activeHIghlight]="checkActive(pages[0])" (click)="openPage(pages[0])" class="buttonSIdeBAr">
-            <ion-icon class="sidebarCss" ios="ios-log-out-outline" md="ios-log-out-outline"></ion-icon>
-            Logout
-          </button>
-         
         </ion-list>
       </ion-content>
     </ion-menu>
@@ -72,13 +118,21 @@ export class MyApp {
   activePage: any;
 
   pages: any[] = [
-    {title: 'Signup', component: 'LoginPage'},
-    {title: 'Master Detail', component: 'ListMasterPage'},
-    {title: 'News Feed', component: 'NewsFeed'},
-    {title: 'Profile', component: 'ProfilePage'},
-    {title: 'Users Lists', component: 'UsersPage'},
-    {title: 'Followers', component: 'Followers'},
-    {title: 'Following', component: 'Following'}
+    {title: 'Sumario', component: 'SumarioPage'},
+    {title: 'Sumario', component: 'ContextRespAerobicaPage'},
+    {title: 'Sumario', component: 'DefinicoesImportantesPage'},
+    {title: 'Sumario', component: 'EtapasRespAerobicaPage'},
+    {title: 'Sumario', component: 'GeralRespAerobicaPage'},
+    {title: 'Sumario', component: 'GeralGlicosePage'},
+    {title: 'Sumario', component: 'GeralCicloKrebesPage'},
+    {title: 'Sumario', component: 'GeralCadeiaTranspPage'},
+    {title: 'Sumario', component: 'ProducaoAtpPage'},
+    {title: 'Sumario', component: 'MitocondriaPage'},
+    {title: 'Sumario', component: 'DetalhadaGlicosePage'},
+    {title: 'Sumario', component: 'DetalhadaCicloKrebsPage'},
+    {title: 'Sumario', component: 'DetalhadaFosforilacaoPage'},
+    {title: 'Sumario', component: 'MontandoRespAerobicaPage'},
+    {title: 'Sumario', component: 'TestesPage'}
   ]
 
 
@@ -122,27 +176,20 @@ export class MyApp {
   }
 
   openPage(page) {
-    if (page.component == "UsersPage") {
-      let loading = this.loadingCtrl.create({
-        content: 'Please wait...'
-      });
-      loading.present();
-      setTimeout(() => {
-        loading.dismiss();
-        this.nav.setRoot(page.component);
-        this.activePage = "random";
-        let toast = this.toastCtrl.create({
-          message: "You have successfully logged out",
-          duration: 2000,
-          position: 'top'
-        });
-        toast.present();
-      }, 2000);
-    } else {
+    
+    let loading = this.loadingCtrl.create({
+      content: 'Aguarde, carregando...'
+    });
+    loading.present();
+    
+    setTimeout(() => {
+      loading.dismiss();
       this.nav.setRoot(page.component);
       this.activePage = page;
       console.log(page.component);
-    }
+      
+    }, 1000);
+
   }
   checkActive(page) {
     return page == this.activePage;

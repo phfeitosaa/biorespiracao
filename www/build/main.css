@@ -36464,12 +36464,12 @@ side-main-menu .circle-pic {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 5px solid #271616;
+  border: 5px solid #1ABC9C;
   font-size: 12px;
 }
 
 side-main-menu .userName {
-  color: white;
+  color: black;
   text-align: center;
   opacity: 0.8;
   font-family: "sans-serif";
@@ -36484,16 +36484,18 @@ side-main-menu .userDetails {
 }
 
 side-main-menu .sideMenuIoncContent .scroll-content, side-main-menu .headerMAin, side-main-menu .buttonSIdeBAr {
-  background: black !important;
+  background-color: #1ABC9C !important;
 }
 
 side-main-menu content-ios.scroll-content {
-  background: black !important;
+  background: white !important;
 }
 
 side-main-menu .buttonSIdeBAr {
   font-size: 18px !important;
-  color: white;
+  border: 1px solid #222;
+  color: #fff;
+  background-color: #1ABC9C !important;
 }
 
 side-main-menu .sidebarCss {
@@ -36503,310 +36505,23 @@ side-main-menu .sidebarCss {
 }
 
 side-main-menu .activeHIghlight {
-  background-color: #1ABC9C !important;
+  color: #1ABC9C !important;
+  background-color: #fff !important;
 }
 
 side-main-menu .toolbar-background {
-  background-color: black !important;
+  background-color: white !important;
 }
 
 side-main-menu .menu-inner {
   width: 80% !important;
 }
 
-followers img {
-  border-radius: 50% !important;
-  overflow: hidden !important;
-  width: 45px !important;
-  height: 45px !important;
-  border: 2px solid #1ABC9C !important;
-}
-
-followers .cssForRoundSLidingItems .button-inner {
-  background-color: #ffffff21;
-  border-radius: 50%;
-  height: 45px;
-  width: 45px;
-  color: white;
-  font-size: 11px;
-}
-
-followers .cssForRoundSLidingItems button {
-  background-color: black;
-  margin-left: -1px !important;
-}
-
-followers .cssForRoundSLidingItems, followers .cssForRoundSLidingItems ion-item {
-  height: 75px !important;
-}
-
-followers .cssForRoundSLidingItems ion-icon:not(.nextDiff) {
-  margin-top: 10px !important;
-  font-size: 2.1em !important;
-}
-
-followers .followers {
-  border: none !important;
-  background-color: white !important;
-}
-
-followers h2 {
-  color: #1ABC9C !important;
-}
-
-followers .toolbar-background {
-  background-color: #1ABC9C !important;
-}
-
-following img {
-  border-radius: 50% !important;
-  overflow: hidden !important;
-  width: 45px !important;
-  height: 45px !important;
-  border: 2px solid #1ABC9C !important;
-}
-
-following .cssForRoundSLidingItems .button-inner {
-  background-color: #ffffff21;
-  border-radius: 50%;
-  height: 45px;
-  width: 45px;
-  color: white;
-  font-size: 11px;
-}
-
-following .cssForRoundSLidingItems button {
-  background-color: black;
-  margin-left: -1px !important;
-}
-
-following .cssForRoundSLidingItems, following .cssForRoundSLidingItems ion-item {
-  height: 75px !important;
-}
-
-following .cssForRoundSLidingItems ion-icon:not(.nextDiff) {
-  margin-top: 10px !important;
-  font-size: 2.1em !important;
-}
-
-following .followings {
-  border: none !important;
-  background-color: white !important;
-}
-
-following .followerNAme {
-  color: #1ABC9C !important;
-}
-
-following h2 {
-  color: #1ABC9C !important;
-}
-
-following .toolbar-background {
-  background-color: #1ABC9C !important;
-}
-
-page-item-create .profile-image-wrapper {
-  text-align: center;
-  margin: 20px 0;
-}
-
-page-item-create .profile-image-wrapper .profile-image {
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-page-item-create .profile-image-wrapper .profile-image-placeholder {
-  display: inline-block;
-  background-color: #eee;
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  font-size: 12px;
-}
-
-page-item-create .profile-image-wrapper .profile-image-placeholder ion-icon {
-  font-size: 44px;
-  margin-bottom: -10px;
-  margin-top: 10px;
-}
-
-page-item-create .toolbar-background {
-  background-color: #1ABC9C !important;
-}
-
-page-item-detail .item-profile {
-  width: 100%;
-  background-position: center center;
-  background-size: cover;
-  height: 250px;
-}
-
-page-item-detail .item-detail {
-  width: 100%;
-  background: white;
-  position: absolute;
-}
-
-page-item-detail h2 {
-  color: #1ABC9C !important;
-}
-
-page-item-detail .toolbar-background {
-  background-color: #1ABC9C !important;
-}
-
-news-feed ion-avatar img {
-  width: 45px !important;
-  height: 45px !important;
-  border: 2px solid #1ABC9C !important;
-}
-
-news-feed .button-clear {
-  color: #1ABC9C;
-}
-
-news-feed h2 {
-  color: #1ABC9C !important;
-}
-
-news-feed .toolbar-background {
-  background-color: #1ABC9C !important;
-}
-
-newsfeed-create .profile-image-wrapper {
-  text-align: center;
-  margin: 20px 0;
-}
-
-newsfeed-create .profile-image-wrapper .profile-image {
-  width: 60%;
-  height: 140px;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-newsfeed-create .profile-image-wrapper .profile-image-placeholder {
-  display: inline-block;
-  background-color: #eee;
-  width: 60%;
-  height: 140px;
-  font-size: 12px;
-}
-
-newsfeed-create .profile-image-wrapper .profile-image-placeholder ion-icon {
-  font-size: 44px;
-  margin-bottom: -10px;
-  margin-top: 32px;
-}
-
-newsfeed-create .toolbar-background {
-  background-color: #1ABC9C !important;
-}
-
-profile-page .profile-image-wrapper {
-  text-align: center;
-  margin: 20px 0;
-}
-
-profile-page .profile-image-wrapper .profile-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border: 5px solid #16a085;
-}
-
-profile-page .profile-image-wrapper .profile-image-placeholder {
-  display: inline-block;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../../assets/img/advance-card-tmntr.jpg");
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  font-size: 12px;
-  border: 5px solid #16a085;
-}
-
-profile-page .profile-image-wrapper .profile-image-placeholder ion-icon {
-  font-size: 44px;
-  margin-bottom: -10px;
-  margin-top: 22px;
-}
-
-profile-page .amount {
-  color: #1ABC9C;
-  background: white;
-}
-
-profile-page .userDetails {
-  color: white;
-  text-align: center;
-  font-family: "sans-serif";
-  font-weight: bold;
-  font-size: 1.6rem !important;
-  margin-bottom: 6%;
-}
-
-profile-page .full_name {
-  opacity: 0.8;
-  color: white;
-  text-align: center;
-  font-family: "sans-serif";
-  font-size: 1.7rem !important;
-  margin-bottom: -6px !important;
-}
-
-profile-page .upperDiv {
-  background: #1ABC9C;
-}
-
-profile-page .item-block {
-  border: none;
-}
-
-profile-page .label_here {
-  color: black !important;
-  font-size: 16px !important;
-}
-
-profile-page ion-input {
-  font-size: 16px !important;
-}
-
-profile-page .list-md {
-  margin: 15px 0 16px;
-}
-
-profile-page .toolbar-background {
-  background-color: #1ABC9C !important;
-}
-
-page-signup .toolbar-background {
-  background-color: #1ABC9C !important;
-}
-
-page-signup .signUpBtn {
-  background: #1ABC9C !important;
-}
-
-users_lists .searchbar-md .searchbar-input {
+sumario .searchbar-md .searchbar-input {
   border-radius: 23px !important;
 }
 
-users_lists img {
+sumario img {
   border-radius: 50% !important;
   overflow: hidden !important;
   width: 45px !important;
@@ -36814,7 +36529,7 @@ users_lists img {
   border: 2px solid #1ABC9C !important;
 }
 
-users_lists .cssForRoundSLidingItems .button-inner {
+sumario .cssForRoundSLidingItems .button-inner {
   background-color: #ffffff21;
   border-radius: 50%;
   height: 45px;
@@ -36823,40 +36538,40 @@ users_lists .cssForRoundSLidingItems .button-inner {
   font-size: 11px;
 }
 
-users_lists .cssForRoundSLidingItems button {
+sumario .cssForRoundSLidingItems button {
   background-color: black;
   margin-left: -1px !important;
 }
 
-users_lists .cssForRoundSLidingItems, users_lists .cssForRoundSLidingItems ion-item {
+sumario .cssForRoundSLidingItems, sumario .cssForRoundSLidingItems ion-item {
   height: 75px !important;
 }
 
-users_lists .cssForRoundSLidingItems ion-icon:not(.nextDiff) {
+sumario .cssForRoundSLidingItems ion-icon:not(.nextDiff) {
   margin-top: 10px !important;
   font-size: 2.1em !important;
 }
 
-users_lists h2 {
+sumario h2 {
   color: #1ABC9C !important;
 }
 
-users_lists .nextDiff {
+sumario .nextDiff {
   color: #1ABC9C;
 }
 
-users_lists ion-item-options[side=left] ion-icon {
+sumario ion-item-options[side=left] ion-icon {
   color: red;
 }
 
-users_lists .login {
+sumario .login {
   color: #1ABC9C !important;
 }
 
-users_lists ion-searchbar {
+sumario ion-searchbar {
   background: #1ABC9C !important;
 }
 
-users_lists .toolbar-background {
+sumario .toolbar-background {
   background-color: #1ABC9C !important;
 }

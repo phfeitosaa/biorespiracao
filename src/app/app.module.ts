@@ -15,7 +15,7 @@ import { MyApp } from './app.component';
 
 import { Vibration } from '@ionic-native/vibration';
 
-import {UsersPageModule} from "../pages/users_lists/users_lists.module";
+import {SumarioPageModule} from "../pages/sumario/sumario.module";
 
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
@@ -45,7 +45,7 @@ export function provideSettings(storage: Storage) {
   imports: [
     BrowserModule,
     HttpClientModule,
-    UsersPageModule,
+    SumarioPageModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

@@ -1,15 +1,14 @@
 webpackJsonp([2],{
 
-/***/ 338:
+/***/ 346:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewsfeedModule", function() { return NewsfeedModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MontandoRespAerobicaPageModule", function() { return MontandoRespAerobicaPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__newsfeed__ = __webpack_require__(347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__montando_resp_aerobica__ = __webpack_require__(361);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -19,39 +18,33 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
-var NewsfeedModule = /** @class */ (function () {
-    function NewsfeedModule() {
+var MontandoRespAerobicaPageModule = /** @class */ (function () {
+    function MontandoRespAerobicaPageModule() {
     }
-    NewsfeedModule = __decorate([
+    MontandoRespAerobicaPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__newsfeed__["a" /* NewsFeed */],
+                __WEBPACK_IMPORTED_MODULE_2__montando_resp_aerobica__["a" /* MontandoRespAerobicaPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__newsfeed__["a" /* NewsFeed */]),
-                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__montando_resp_aerobica__["a" /* MontandoRespAerobicaPage */]),
             ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_3__newsfeed__["a" /* NewsFeed */]
-            ]
         })
-    ], NewsfeedModule);
-    return NewsfeedModule;
+    ], MontandoRespAerobicaPageModule);
+    return MontandoRespAerobicaPageModule;
 }());
 
-//# sourceMappingURL=newsfeed.module.js.map
+//# sourceMappingURL=montando-resp-aerobica.module.js.map
 
 /***/ }),
 
-/***/ 347:
+/***/ 361:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewsFeed; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MontandoRespAerobicaPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers__ = __webpack_require__(58);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -63,73 +56,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-
-var NewsFeed = /** @class */ (function () {
-    function NewsFeed(navCtrl, modalCtrl, items, toastCtrl) {
+/**
+ * Generated class for the MontandoRespAerobicaPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var MontandoRespAerobicaPage = /** @class */ (function () {
+    function MontandoRespAerobicaPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
-        this.modalCtrl = modalCtrl;
-        this.items = items;
-        this.toastCtrl = toastCtrl;
-        this.press = 0;
-        this.likes = 10;
-        this.cardItems = [
-            {
-                user_avtar: 'assets/img/marty-avatar.png',
-                user_name: 'Marty McFly',
-                date: 'November 5, 1955',
-                image: 'assets/img/advance-card-bttf.png',
-                content: 'Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.',
-            },
-            {
-                user_avtar: 'assets/img/sarah-avatar.png.jpeg',
-                user_name: 'Sarah Connor',
-                date: 'May 12, 1984',
-                image: 'assets/img/advance-card-tmntr.jpg',
-                content: 'I face the unknown future, with a sense of hope. Because if a machine, a Terminator, can learn the value of human life, maybe we can too.'
-            },
-            {
-                user_avtar: 'assets/img/ian-avatar.png',
-                user_name: 'Dr. Ian Malcolm',
-                date: 'June 28, 1990',
-                image: 'assets/img/advance-card-jp.jpg',
-                content: 'Your scientists were so preoccupied with whether or not they could, that they didn\'t stop to think if they should.'
-            }
-        ];
+        this.navParams = navParams;
     }
-    NewsFeed.prototype.addNewsFeed = function () {
-        var _this = this;
-        var addModal = this.modalCtrl.create('NewsfeedCreate');
-        addModal.onDidDismiss(function (item) {
-            if (item) {
-                console.log(item);
-                _this.cardItems.push(item);
-            }
-        });
-        addModal.present();
+    MontandoRespAerobicaPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad MontandoRespAerobicaPage');
     };
-    NewsFeed.prototype.dblClickEvent = function (ev, user_name) {
-        this.press++;
-        if (this.press == 2) {
-            var toast = this.toastCtrl.create({
-                message: "You have liked this.",
-                duration: 2000,
-                position: 'top'
-            });
-            toast.present();
-            this.press = 0;
-            this.likes++;
-        }
-    };
-    NewsFeed = __decorate([
+    MontandoRespAerobicaPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'news-feed',template:/*ion-inline-start:"C:\Users\paulo\Ionic\BioRespiracao\src\pages\newsfeed\newsfeed.html"*/'\n<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{ \'News Feed\' | translate }}</ion-title>\n    <ion-buttons right>\n      <button ion-button icon-only (click)="addNewsFeed()" ><ion-icon name="add"></ion-icon></button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content>\n\n  <ion-card *ngFor="let item of cardItems">\n\n    <ion-item>\n      <ion-avatar item-start>\n        <img [src]="item.user_avtar">\n      </ion-avatar>\n      <h2>{{item.user_name}}</h2>\n      <p>{{item.date}}</p>\n    </ion-item>\n\n    <img (tap)="dblClickEvent($event,item.user_name)"  [src]="item.image">\n\n    <ion-card-content>\n      <p>{{item.content}}</p>\n    </ion-card-content>\n\n    <ion-row>\n      <ion-col>\n        <button ion-button color="primary" clear small icon-start>\n          <ion-icon name=\'thumbs-up\'></ion-icon>\n          {{likes}} Likes\n        </button>\n      </ion-col>\n      <ion-col>\n        <button ion-button color="primary" clear small icon-start>\n          <ion-icon name=\'text\'></ion-icon>\n          4 Comments\n        </button>\n      </ion-col>\n      <ion-col center text-center>\n        <ion-note>\n          11h ago\n        </ion-note>\n      </ion-col>\n    </ion-row>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"C:\Users\paulo\Ionic\BioRespiracao\src\pages\newsfeed\newsfeed.html"*/
+            selector: 'page-montando-resp-aerobica',template:/*ion-inline-start:"C:\Users\paulo\Ionic\BioRespiracao\src\pages\montando-resp-aerobica\montando-resp-aerobica.html"*/'<!--\n  Generated template for the MontandoRespAerobicaPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>montando-resp-aerobica</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\paulo\Ionic\BioRespiracao\src\pages\montando-resp-aerobica\montando-resp-aerobica.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */], __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* Items */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
-    ], NewsFeed);
-    return NewsFeed;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
+    ], MontandoRespAerobicaPage);
+    return MontandoRespAerobicaPage;
 }());
 
-//# sourceMappingURL=newsfeed.js.map
+//# sourceMappingURL=montando-resp-aerobica.js.map
 
 /***/ })
 

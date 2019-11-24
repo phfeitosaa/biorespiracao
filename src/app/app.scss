@@ -28,7 +28,7 @@ side-main-menu {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 5px solid #271616 ;
+    border: 5px solid #1ABC9C ;
     font-size: 12px;
 
 
@@ -42,7 +42,7 @@ side-main-menu {
   }
 
   .userName {
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     opacity: 0.8;
     font-family: "sans-serif";
@@ -59,16 +59,19 @@ side-main-menu {
 
 
   .sideMenuIoncContent .scroll-content,.headerMAin,.buttonSIdeBAr{
-    background: black !important;
+    background-color: map_get($colors,theme_color) !important;
   }
   content-ios.scroll-content{
-    background: black !important;
+    background: rgb(255, 255, 255) !important;
   }
 
   .buttonSIdeBAr{
     font-size: 18px !important;
-    color: white;
-    //border: 1px solid #222;
+    
+    border: 1px solid #222;
+
+    color: #fff;
+    background-color: map_get($colors,theme_color) !important;
   }
 
   .sidebarCss{
@@ -77,10 +80,8 @@ side-main-menu {
     font-size: 25px !important;
   }
   .activeHIghlight{
-    //background-color: map_get($colors,light);
-    //background-color: #222 !important;
-    //background-color: #f4443e !important;
-    background-color: map_get($colors,theme_color) !important;
+    color:  map_get($colors,theme_color) !important;
+    background-color: #fff !important;
   }
 
 
@@ -110,7 +111,7 @@ side-main-menu {
 
 
   .toolbar-background {
-    background-color: black !important;
+    background-color: rgb(255, 255, 255) !important;
   }
 
 /*
