@@ -1,18 +1,98 @@
-<!--
-  Generated template for the DefinicoesImportantesPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>definicoes-importantes</ion-title>
-  </ion-navbar>
-
-</ion-header>
+    <ion-navbar color="primary">
+      <ion-buttons left>
+        <button ion-button icon-only menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-title>DEFINIÇÕES IMPORTANTES <br> SOBRE RESPIRAÇÃO </ion-title>
+    </ion-navbar>
+  </ion-header>
 
 
 <ion-content padding>
 
+  <a (click)="mostrarResp1 = !mostrarResp1;"><h5>1. Respiração celular</h5></a>
+  <p [hidden]="!mostrarResp1">Processo energético de obtenção de energia química na forma de ATP a partir da degradação de moléculas orgânicas como a glicose.
+  </p>
+
+  <a (click)="mostrarResp2 = !mostrarResp2;"><h5>2. Respiração aeróbia</h5></a>
+  <p [hidden]="!mostrarResp2">Processo de obtenção de energia química em que o aceptor final de elétrons é o gás oxigênio (O2).
+  </p>
+
+  <a (click)="mostrarResp3 = !mostrarResp3;"><h5>3. Energia química</h5></a>
+  <p [hidden]="!mostrarResp3">Energia disponível nas biomoléculas para ser liberada em uma reação química.
+  </p>
+
+  <a (click)="mostrarResp4 = !mostrarResp4;"><h5>4. Glicose</h5></a>
+  <p [hidden]="!mostrarResp4">Carboidrato de fórmula molecular (C6H12O6), fabricado pelos vegetais durantes a fotossíntese.
+  </p>
+
+  <a (click)="mostrarResp5 = !mostrarResp5;"><h5>5. Fotossíntese</h5></a>
+  <p [hidden]="!mostrarResp5">Processo energético realizado por plantas, alguns protoctistas e alguns procariontes com a utilização de energia luminosa, gás carbônico  (CO2) e água (H2O).
+  </p>
+
+  <a (click)="mostrarResp6 = !mostrarResp6;"><h5>6. Carboidrato</h5></a>
+  <p [hidden]="!mostrarResp6">Molécula orgânica formada principalmente por carbono (C), hidrogênio (H) e oxigênio (O).
+  </p>
+
+  <a (click)="mostrarResp7 = !mostrarResp7;"><h5>7. Adenina Trifosfato (ATP)</h5></a>
+  <p [hidden]="!mostrarResp7">Molécula orgânica formada por um nucleotídeo de adenina - A (C₅H₅N₅), uma ribose  (C5H10O5) e três fosfatos inorgânicos (Pi).
+  </p>
+
+  <a (click)="mostrarResp8 = !mostrarResp8;"><h5>8. Adenina Difosfato (ADP)</h5></a>
+  <p [hidden]="!mostrarResp8">Molécula orgânica formada por um nucleotídeo de adenina A (C₅H₅N₅), uma ribose e dois fosfatos inorgânicos (Pi).
+  </p>
+
+  <a (click)="mostrarResp9 = !mostrarResp9;"><h5>9. Mitocôndria</h5></a>
+  <p [hidden]="!mostrarResp9">Organela celular que contém seu próprio DNA e é responsável pela produção de energia (ATP).
+  </p>
+
+  <a (click)="mostrarResp10 = !mostrarResp10;"><h5>10. Nicotinamida Adenina Dinucleotídeo - NAD  (C21H27N7O14P2) </h5></a>
+  <p [hidden]="!mostrarResp10">Transportador de elétrons. É formado a partir ADP + vitamina B₃ (PP, nicotinamida ou niacina).
+  </p>
+
+  <a (click)="mostrarResp11 = !mostrarResp11;"><h5>11. Flavina Adenina Dinucleotídeo - FAD (C27H33N9O15P2 ): 
+  </h5></a>
+  <p [hidden]="!mostrarResp11">Transportador de elétrons. É formada por ADP + vitamina B₂ (riboflavina).
+  </p>
+
+  <a (click)="mostrarResp12 = !mostrarResp12;"><h5>12. Reações redox</h5></a>
+  <p [hidden]="!mostrarResp12">Transferência de elétrons de uma substância para outra.
+  </p>
+
+  <a (click)="mostrarResp13 = !mostrarResp13;"><h5>13. Redução</h5></a>
+  <p [hidden]="!mostrarResp13">Ganho de um ou mais elétrons por um átomo, íon ou molécula.
+  </p>
+
+  <a (click)="mostrarResp14 = !mostrarResp14;"><h5>14. Oxidação</h5></a>
+  <p [hidden]="!mostrarResp14">Perda de um ou mais elétrons por uma átomo, íon ou molécula.
+  </p>
+
+  <a (click)="mostrarResp15 = !mostrarResp15;"><h5>15. Agente oxidante</h5></a>
+  <p [hidden]="!mostrarResp15">Aquele que recebeu elétrons e foi reduzido.
+  </p>
+
+  <a (click)="mostrarResp16 = !mostrarResp16;"><h5>16. Agente Redutor</h5></a>
+  <p [hidden]="!mostrarResp16">Aquele que doou ou perdeu elétrons e foi oxidado.
+  </p>
+
+  <a (click)="mostrarResp17 = !mostrarResp17;"><h5>17. Piruvato (C3H4O3)</h5></a>
+  <p [hidden]="!mostrarResp17">Molécula resultante da glicólise.
+  </p>
+
+  <a (click)="mostrarResp18 = !mostrarResp18;"><h5>18. Pi</h5></a>
+  <p [hidden]="!mostrarResp18">Fosfato inorgânico.
+  </p>
+
+  <a (click)="mostrarResp19 = !mostrarResp19;"><h5>19. Acetil (C₂H₃O)</h5></a>
+  <p [hidden]="!mostrarResp19">Composto intermediário formado pela após a liberação de um C do piruvato para a formação de gás carbônico.
+
+  </p>
+
+  <a (click)="mostrarResp20= !mostrarResp20;"><h5>20. Coenzima A (C₂₁H₃₆N₇O₁₆P₃S): </h5></a>
+  <p [hidden]="!mostrarResp20">substância formada a partir de ADP + vitamina B₅ (ácido pantotênico).
+  </p>
+
+  <br>
 </ion-content>

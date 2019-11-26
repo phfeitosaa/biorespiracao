@@ -1,5 +1,11 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage,
+  ModalController,
+  NavController,
+  NavParams,
+  ToastController,
+  LoadingController } from 'ionic-angular';
+  import {Vibration} from '@ionic-native/vibration';
 
 /**
  * Generated class for the ContextRespAerobicaPage page.
@@ -15,7 +21,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ContextRespAerobicaPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public vibration: Vibration, public navCtrl: NavController, public navParams: NavParams,
+    public modalCtrl: ModalController,
+    public toastCtrl: ToastController,
+    public loadingCtrl: LoadingController) {
   }
 
   ionViewDidLoad() {

@@ -9,8 +9,6 @@ import {
 } from 'ionic-angular';
 import {Vibration} from '@ionic-native/vibration';
 
-import {Items} from '../../providers';
-
 @IonicPage()
 @Component({
   selector: 'sumario',
@@ -18,32 +16,11 @@ import {Items} from '../../providers';
 })
 export class SumarioPage {
 
-  currentItems: any[];
-  public press: number = 0;
-
-
   constructor(public vibration: Vibration, public navCtrl: NavController, public navParams: NavParams,
-              public items: Items, public modalCtrl: ModalController,
+              public modalCtrl: ModalController,
               public toastCtrl: ToastController,
               public loadingCtrl: LoadingController) {
 
-    this.currentItems = this.items.query();
-
-
-  }
-
-  /**
-   * Perform a service for the proper items.
-   */
-  getItems(ev) {
-    let val = ev.target.value;
-    if (!val || !val.trim()) {
-      this.currentItems = this.items.query();
-      return;
-    }
-    this.currentItems = this.items.query({
-      name: val
-    });
   }
 
   /**

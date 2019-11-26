@@ -36517,6 +36517,175 @@ side-main-menu .menu-inner {
   width: 80% !important;
 }
 
+page-context-resp-aerobica .searchbar-md .searchbar-input {
+  border-radius: 23px !important;
+}
+
+page-context-resp-aerobica .cssForRoundSLidingItems .button-inner {
+  background-color: #ffffff21;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  color: white;
+  font-size: 11px;
+}
+
+page-context-resp-aerobica .cssForRoundSLidingItems button {
+  background-color: black;
+  margin-left: -1px !important;
+}
+
+page-context-resp-aerobica .cssForRoundSLidingItems, page-context-resp-aerobica .cssForRoundSLidingItems ion-item {
+  height: 75px !important;
+}
+
+page-context-resp-aerobica .cssForRoundSLidingItems ion-icon:not(.nextDiff) {
+  margin-top: 10px !important;
+  font-size: 2.1em !important;
+}
+
+page-context-resp-aerobica h2 {
+  color: #1ABC9C !important;
+}
+
+page-context-resp-aerobica .nextDiff {
+  color: #1ABC9C;
+}
+
+page-context-resp-aerobica ion-item-options[side=left] ion-icon {
+  color: red;
+}
+
+page-context-resp-aerobica .login {
+  color: #1ABC9C !important;
+}
+
+page-context-resp-aerobica ion-searchbar {
+  background: #1ABC9C !important;
+}
+
+page-context-resp-aerobica .toolbar-background {
+  background-color: #1ABC9C !important;
+}
+
+page-definicoes-importantes .searchbar-md .searchbar-input {
+  border-radius: 23px !important;
+}
+
+page-definicoes-importantes img {
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  width: 45px !important;
+  height: 45px !important;
+  border: 2px solid #1ABC9C !important;
+}
+
+page-definicoes-importantes .cssForRoundSLidingItems .button-inner {
+  background-color: #ffffff21;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  color: white;
+  font-size: 11px;
+}
+
+page-definicoes-importantes .cssForRoundSLidingItems button {
+  background-color: black;
+  margin-left: -1px !important;
+}
+
+page-definicoes-importantes .cssForRoundSLidingItems, page-definicoes-importantes .cssForRoundSLidingItems ion-item {
+  height: 75px !important;
+}
+
+page-definicoes-importantes .cssForRoundSLidingItems ion-icon:not(.nextDiff) {
+  margin-top: 10px !important;
+  font-size: 2.1em !important;
+}
+
+page-definicoes-importantes h5 {
+  color: #1ABC9C !important;
+}
+
+page-definicoes-importantes .nextDiff {
+  color: #1ABC9C;
+}
+
+page-definicoes-importantes ion-item-options[side=left] ion-icon {
+  color: red;
+}
+
+page-definicoes-importantes .login {
+  color: #1ABC9C !important;
+}
+
+page-definicoes-importantes ion-searchbar {
+  background: #1ABC9C !important;
+}
+
+page-definicoes-importantes .toolbar-background {
+  background-color: #1ABC9C !important;
+}
+
+page-etapas-resp-aerobica .searchbar-md .searchbar-input {
+  border-radius: 23px !important;
+}
+
+page-etapas-resp-aerobica img {
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  width: 45px !important;
+  height: 45px !important;
+  border: 2px solid #1ABC9C !important;
+}
+
+page-etapas-resp-aerobica .cssForRoundSLidingItems .button-inner {
+  background-color: #ffffff21;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  color: white;
+  font-size: 11px;
+}
+
+page-etapas-resp-aerobica .cssForRoundSLidingItems button {
+  background-color: black;
+  margin-left: -1px !important;
+}
+
+page-etapas-resp-aerobica .cssForRoundSLidingItems, page-etapas-resp-aerobica .cssForRoundSLidingItems ion-item {
+  height: 75px !important;
+}
+
+page-etapas-resp-aerobica .cssForRoundSLidingItems ion-icon:not(.nextDiff) {
+  margin-top: 10px !important;
+  font-size: 2.1em !important;
+}
+
+page-etapas-resp-aerobica h2 {
+  color: #1ABC9C !important;
+}
+
+page-etapas-resp-aerobica .nextDiff {
+  color: #1ABC9C;
+}
+
+page-etapas-resp-aerobica ion-item-options[side=left] ion-icon {
+  color: red;
+}
+
+page-etapas-resp-aerobica .login {
+  color: #1ABC9C !important;
+}
+
+page-etapas-resp-aerobica ion-searchbar {
+  background: #1ABC9C !important;
+}
+
+page-etapas-resp-aerobica .toolbar-background {
+  background-color: #1ABC9C !important;
+}
+
 sumario .searchbar-md .searchbar-input {
   border-radius: 23px !important;
 }

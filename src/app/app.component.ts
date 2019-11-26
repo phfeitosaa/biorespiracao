@@ -119,20 +119,20 @@ export class MyApp {
 
   pages: any[] = [
     {title: 'Sumario', component: 'SumarioPage'},
-    {title: 'Sumario', component: 'ContextRespAerobicaPage'},
-    {title: 'Sumario', component: 'DefinicoesImportantesPage'},
-    {title: 'Sumario', component: 'EtapasRespAerobicaPage'},
-    {title: 'Sumario', component: 'GeralRespAerobicaPage'},
-    {title: 'Sumario', component: 'GeralGlicosePage'},
-    {title: 'Sumario', component: 'GeralCicloKrebesPage'},
-    {title: 'Sumario', component: 'GeralCadeiaTranspPage'},
-    {title: 'Sumario', component: 'ProducaoAtpPage'},
-    {title: 'Sumario', component: 'MitocondriaPage'},
-    {title: 'Sumario', component: 'DetalhadaGlicosePage'},
-    {title: 'Sumario', component: 'DetalhadaCicloKrebsPage'},
-    {title: 'Sumario', component: 'DetalhadaFosforilacaoPage'},
-    {title: 'Sumario', component: 'MontandoRespAerobicaPage'},
-    {title: 'Sumario', component: 'TestesPage'}
+    {title: 'CONTEXTUALIZANDO A RESPIRAÇÃO AERÓBIA', component: 'ContextRespAerobicaPage'},
+    {title: 'DEFINIÇÕES IMPORTANTES SOBRE RESPIRAÇÃO NA FORMA DE PERGUNTAS', component: 'DefinicoesImportantesPage'},
+    {title: 'ETAPAS DA RESPIRAÇÃO AERÓBIA', component: 'EtapasRespAerobicaPage'},
+    {title: 'VISÃO GERAL DA RESPIRAÇÃO AERÓBIA', component: 'GeralRespAerobicaPage'},
+    {title: 'VISÃO GERAL DA GLICÓLISE', component: 'GeralGlicosePage'},
+    {title: 'VISÃO GERAL DO CICLO DE KREBES OU DO ÁCIDO CÍTRICO', component: 'GeralCicloKrebesPage'},
+    {title: 'VISÃO GERAL DA CADEIA TRANSPORTADORA DE ELÉTRONS', component: 'GeralCadeiaTranspPage'},
+    {title: 'PRODUÇÃO DE ATP A PARTIR DA OXIDAÇÃO COMPLETA DA GLICOSE', component: 'ProducaoAtpPage'},
+    {title: 'MITOCÔNDRIA', component: 'MitocondriaPage'},
+    {title: 'VISÃO DETALHADA DA GLICÓLISE', component: 'DetalhadaGlicosePage'},
+    {title: 'VISÃO DETALHADA DO CICLO DE KREBS', component: 'DetalhadaCicloKrebsPage'},
+    {title: 'VISÃO DETALHADA DA FOSFORILAÇÃO<br> OXIDATIVA', component: 'DetalhadaFosforilacaoPage'},
+    {title: 'MONTANDO A RESPIRAÇÃO AERÓBIA', component: 'MontandoRespAerobicaPage'},
+    {title: 'TESTES', component: 'TestesPage'}
   ]
 
 

@@ -1,18 +1,31 @@
-<!--
-  Generated template for the ContextRespAerobicaPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>CONTEXTUALIZANDO A RESPIRAÇÃO AERÓBIA</ion-title>
+  <ion-navbar color="primary">
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>CONTEXTUALIZANDO A <br> RESPIRAÇÃO AERÓBIA</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
+
+  <p>A respiração aeróbia é um processo energético realizado por seres vivos eucariontes que envolve o 
+    catabolismo (processo exergônico) de moléculas orgânicas. O referido processo tem início no 
+    citoplasma celular quando as células recebem moléculas orgânicas como a glicose e/ou ácidos 
+    graxos. Para melhor compreensão do processo e das etapas da respiração aeróbia, será demonstrado 
+    o que ocorre quando uma célula recebe moléculas de glicose oriundas do processo de nutrição 
+    realizado pelos seres vivos, sejam por meio de mecanismos autotróficos ou heterotróficos na 
+    produção de <a (click)="mostrarATP = !mostrarATP;">ATP</a>. 
+    <img src="../../assets/img/queen-live.png" [hidden]="!mostrarATP"> 
+    <br>É importante lembrar que os açúcares degradados durantes as etapas da respiração aeróbia, são 
+    produzidos pelos seres autotróficos, sendo a <a (click)="mostrarFotossintese = !mostrarFotossintese;"> fotossíntese </a> 
+    <img src="../../assets/img/queen-live.png" [hidden]="!mostrarFotossintese"> 
+    o principal processo anabólico (processo endergônico) de produção e, portanto, de armazenamento inicial 
+    de energia química a ser transferida por meio do fluxo de energia e matéria nos demais níveis tróficos 
+    das cadeias alimentares do planeta Terra. 
+    </p> 
 
 </ion-content>

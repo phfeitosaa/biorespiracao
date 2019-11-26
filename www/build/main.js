@@ -1,6 +1,26 @@
 webpackJsonp([15],{
 
-/***/ 130:
+/***/ 119:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__api_api__ = __webpack_require__(183);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__api_api__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mocks_providers_items__ = __webpack_require__(184);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__mocks_providers_items__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__settings_settings__ = __webpack_require__(309);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__settings_settings__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__user_user__ = __webpack_require__(310);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_3__user_user__["a"]; });
+
+
+
+
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ 131:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -13,11 +33,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 130;
+webpackEmptyAsyncContext.id = 131;
 
 /***/ }),
 
-/***/ 181:
+/***/ 182:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -30,11 +50,11 @@ var map = {
 		13
 	],
 	"../pages/detalhada-ciclo-krebs/detalhada-ciclo-krebs.module": [
-		335,
+		334,
 		12
 	],
 	"../pages/detalhada-fosforilacao/detalhada-fosforilacao.module": [
-		334,
+		335,
 		11
 	],
 	"../pages/detalhada-glicose/detalhada-glicose.module": [
@@ -46,42 +66,42 @@ var map = {
 		9
 	],
 	"../pages/geral-cadeia-transp/geral-cadeia-transp.module": [
-		339,
+		338,
 		8
 	],
 	"../pages/geral-ciclo-krebes/geral-ciclo-krebes.module": [
-		341,
+		339,
 		7
 	],
 	"../pages/geral-glicose/geral-glicose.module": [
-		338,
+		340,
 		6
 	],
 	"../pages/geral-resp-aerobica/geral-resp-aerobica.module": [
-		343,
+		341,
 		5
 	],
 	"../pages/list-master/list-master.module": [
-		345,
+		342,
 		4
 	],
 	"../pages/mitocondria/mitocondria.module": [
-		340,
+		343,
 		3
 	],
 	"../pages/montando-resp-aerobica/montando-resp-aerobica.module": [
-		346,
+		344,
 		2
 	],
 	"../pages/producao-atp/producao-atp.module": [
-		342,
+		345,
 		1
 	],
 	"../pages/sumario/sumario.module": [
-		182
+		185
 	],
 	"../pages/testes/testes.module": [
-		344,
+		346,
 		0
 	]
 };
@@ -96,61 +116,17 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 181;
+webpackAsyncContext.id = 182;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 182:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SumarioPageModule", function() { return SumarioPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__sumario__ = __webpack_require__(308);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var SumarioPageModule = /** @class */ (function () {
-    function SumarioPageModule() {
-    }
-    SumarioPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__sumario__["a" /* SumarioPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__sumario__["a" /* SumarioPage */]),
-                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
-            ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_3__sumario__["a" /* SumarioPage */]
-            ]
-        })
-    ], SumarioPageModule);
-    return SumarioPageModule;
-}());
-
-//# sourceMappingURL=sumario.module.js.map
-
-/***/ }),
-
-/***/ 184:
+/***/ 183:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Api; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(131);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(132);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -209,13 +185,13 @@ var Api = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 185:
+/***/ 184:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Items; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_item__ = __webpack_require__(309);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_item__ = __webpack_require__(308);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -311,6 +287,50 @@ var Items = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 185:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SumarioPageModule", function() { return SumarioPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__sumario__ = __webpack_require__(312);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var SumarioPageModule = /** @class */ (function () {
+    function SumarioPageModule() {
+    }
+    SumarioPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_3__sumario__["a" /* SumarioPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__sumario__["a" /* SumarioPage */]),
+                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_3__sumario__["a" /* SumarioPage */]
+            ]
+        })
+    ], SumarioPageModule);
+    return SumarioPageModule;
+}());
+
+//# sourceMappingURL=sumario.module.js.map
+
+/***/ }),
+
 /***/ 225:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -332,21 +352,21 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* unused harmony export createTranslateLoader */
 /* unused harmony export provideSettings */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(131);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(132);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_camera__ = __webpack_require__(244);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__ = __webpack_require__(133);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(134);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(136);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ngx_translate_http_loader__ = __webpack_require__(284);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ionic_angular__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__mocks_providers_items__ = __webpack_require__(185);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__mocks_providers_items__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__app_component__ = __webpack_require__(330);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_vibration__ = __webpack_require__(183);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_sumario_sumario_module__ = __webpack_require__(182);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_vibration__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_sumario_sumario_module__ = __webpack_require__(185);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -410,20 +430,20 @@ var AppModule = /** @class */ (function () {
                     links: [
                         { loadChildren: '../pages/context-resp-aerobica/context-resp-aerobica.module#ContextRespAerobicaPageModule', name: 'ContextRespAerobicaPage', segment: 'context-resp-aerobica', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/definicoes-importantes/definicoes-importantes.module#DefinicoesImportantesPageModule', name: 'DefinicoesImportantesPage', segment: 'definicoes-importantes', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/detalhada-fosforilacao/detalhada-fosforilacao.module#DetalhadaFosforilacaoPageModule', name: 'DetalhadaFosforilacaoPage', segment: 'detalhada-fosforilacao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/detalhada-ciclo-krebs/detalhada-ciclo-krebs.module#DetalhadaCicloKrebsPageModule', name: 'DetalhadaCicloKrebsPage', segment: 'detalhada-ciclo-krebs', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/detalhada-fosforilacao/detalhada-fosforilacao.module#DetalhadaFosforilacaoPageModule', name: 'DetalhadaFosforilacaoPage', segment: 'detalhada-fosforilacao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/detalhada-glicose/detalhada-glicose.module#DetalhadaGlicosePageModule', name: 'DetalhadaGlicosePage', segment: 'detalhada-glicose', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/etapas-resp-aerobica/etapas-resp-aerobica.module#EtapasRespAerobicaPageModule', name: 'EtapasRespAerobicaPage', segment: 'etapas-resp-aerobica', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/geral-glicose/geral-glicose.module#GeralGlicosePageModule', name: 'GeralGlicosePage', segment: 'geral-glicose', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/geral-cadeia-transp/geral-cadeia-transp.module#GeralCadeiaTranspPageModule', name: 'GeralCadeiaTranspPage', segment: 'geral-cadeia-transp', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/mitocondria/mitocondria.module#MitocondriaPageModule', name: 'MitocondriaPage', segment: 'mitocondria', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/geral-ciclo-krebes/geral-ciclo-krebes.module#GeralCicloKrebesPageModule', name: 'GeralCicloKrebesPage', segment: 'geral-ciclo-krebes', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/geral-glicose/geral-glicose.module#GeralGlicosePageModule', name: 'GeralGlicosePage', segment: 'geral-glicose', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/geral-resp-aerobica/geral-resp-aerobica.module#GeralRespAerobicaPageModule', name: 'GeralRespAerobicaPage', segment: 'geral-resp-aerobica', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/list-master/list-master.module#ListMasterPageModule', name: 'ListMasterPage', segment: 'list-master', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/mitocondria/mitocondria.module#MitocondriaPageModule', name: 'MitocondriaPage', segment: 'mitocondria', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/montando-resp-aerobica/montando-resp-aerobica.module#MontandoRespAerobicaPageModule', name: 'MontandoRespAerobicaPage', segment: 'montando-resp-aerobica', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/producao-atp/producao-atp.module#ProducaoAtpPageModule', name: 'ProducaoAtpPage', segment: 'producao-atp', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sumario/sumario.module#SumarioPageModule', name: 'SumarioPage', segment: 'sumario', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/geral-resp-aerobica/geral-resp-aerobica.module#GeralRespAerobicaPageModule', name: 'GeralRespAerobicaPage', segment: 'geral-resp-aerobica', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/testes/testes.module#TestesPageModule', name: 'TestesPage', segment: 'testes', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/list-master/list-master.module#ListMasterPageModule', name: 'ListMasterPage', segment: 'list-master', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/montando-resp-aerobica/montando-resp-aerobica.module#MontandoRespAerobicaPageModule', name: 'MontandoRespAerobicaPage', segment: 'montando-resp-aerobica', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/testes/testes.module#TestesPageModule', name: 'TestesPage', segment: 'testes', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["a" /* IonicStorageModule */].forRoot()
@@ -457,112 +477,6 @@ var AppModule = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SumarioPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__ = __webpack_require__(183);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers__ = __webpack_require__(58);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var SumarioPage = /** @class */ (function () {
-    function SumarioPage(vibration, navCtrl, navParams, items, modalCtrl, toastCtrl, loadingCtrl) {
-        this.vibration = vibration;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.items = items;
-        this.modalCtrl = modalCtrl;
-        this.toastCtrl = toastCtrl;
-        this.loadingCtrl = loadingCtrl;
-        this.press = 0;
-        this.currentItems = this.items.query();
-    }
-    /**
-     * Perform a service for the proper items.
-     */
-    SumarioPage.prototype.getItems = function (ev) {
-        var val = ev.target.value;
-        if (!val || !val.trim()) {
-            this.currentItems = this.items.query();
-            return;
-        }
-        this.currentItems = this.items.query({
-            name: val
-        });
-    };
-    /**
-     * Navigate to the detail page for this item.
-     */
-    SumarioPage.prototype.abrirCap1 = function () {
-        this.navCtrl.push('ContextRespAerobicaPage');
-    };
-    SumarioPage.prototype.abrirCap2 = function () {
-        this.navCtrl.push('DefinicoesImportantesPage');
-    };
-    SumarioPage.prototype.abrirCap3 = function () {
-        this.navCtrl.push('EtapasRespAerobicaPage');
-    };
-    SumarioPage.prototype.abrirCap4 = function () {
-        this.navCtrl.push('GeralRespAerobicaPage');
-    };
-    SumarioPage.prototype.abrirCap5 = function () {
-        this.navCtrl.push('GeralGlicosePage');
-    };
-    SumarioPage.prototype.abrirCap6 = function () {
-        this.navCtrl.push('GeralCicloKrebesPage');
-    };
-    SumarioPage.prototype.abrirCap7 = function () {
-        this.navCtrl.push('GeralCadeiaTranspPage');
-    };
-    SumarioPage.prototype.abrirCap8 = function () {
-        this.navCtrl.push('ProducaoAtpPage');
-    };
-    SumarioPage.prototype.abrirCap9 = function () {
-        this.navCtrl.push('MitocondriaPage');
-    };
-    SumarioPage.prototype.abrirCap10 = function () {
-        this.navCtrl.push('DetalhadaGlicosePage');
-    };
-    SumarioPage.prototype.abrirCap11 = function () {
-        this.navCtrl.push('DetalhadaCicloKrebsPage');
-    };
-    SumarioPage.prototype.abrirCap12 = function () {
-        this.navCtrl.push('DetalhadaFosforilacaoPage');
-    };
-    SumarioPage.prototype.abrirCap13 = function () {
-        this.navCtrl.push('MontandoRespAerobicaPage');
-    };
-    SumarioPage.prototype.abrirCap14 = function () {
-        this.navCtrl.push('TestesPage');
-    };
-    SumarioPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'sumario',template:/*ion-inline-start:"C:\Users\paulo\Ionic\BioRespiracao\src\pages\sumario\sumario.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>SUMÁRIO</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content>\n  <ion-list>\n    \n    <ion-item (click)="abrirCap1()">\n    \n      <h2>CONTEXTUALIZANDO A RESPIRAÇÃO<br> AERÓBIA </h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap2()">\n        \n      <h2>DEFINIÇÕES IMPORTANTES SOBRE <br> RESPIRAÇÃO NA FORMA DE PERGUNTAS </h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap3()">\n        \n      <h2>ETAPAS DA RESPIRAÇÃO AERÓBIA</h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap4()">\n        \n      <h2>VISÃO GERAL DA RESPIRAÇÃO <br> AERÓBIA </h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap5()">\n        \n      <h2>VISÃO GERAL DA GLICÓLISE </h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap6()">\n        \n      <h2>VISÃO GERAL DO CICLO DE KREBES<br> OU DO ÁCIDO CÍTRICO </h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap7()">\n        \n      <h2>VISÃO GERAL DA CADEIA <br> TRANSPORTADORA DE ELÉTRONS  </h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap8()">\n        \n      <h2>PRODUÇÃO DE ATP A PARTIR <br> DA OXIDAÇÃO COMPLETA DA GLICOSE</h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap9()">\n        \n      <h2>MITOCÔNDRIA</h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap10()">\n        \n      <h2>VISÃO DETALHADA DA GLICÓLISE </h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap11()">\n        \n      <h2>VISÃO DETALHADA DO CICLO DE KREBS </h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap12()">\n        \n      <h2>VISÃO DETALHADA DA FOSFORILAÇÃO<br> OXIDATIVA </h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap13()">\n        \n      <h2>MONTANDO A RESPIRAÇÃO AERÓBIA </h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap14()">\n        \n      <h2>TESTES</h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n  </ion-list>\n\n  \n</ion-content>\n\n\n'/*ion-inline-end:"C:\Users\paulo\Ionic\BioRespiracao\src\pages\sumario\sumario.html"*/
-        }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__providers__["b" /* Items */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__providers__["b" /* Items */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]) === "function" && _g || Object])
-    ], SumarioPage);
-    return SumarioPage;
-    var _a, _b, _c, _d, _e, _f, _g;
-}());
-
-//# sourceMappingURL=sumario.js.map
-
-/***/ }),
-
-/***/ 309:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Item; });
 /**
  * A generic model that our Master-Detail pages list, create, and delete.
@@ -588,13 +502,13 @@ var Item = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 310:
+/***/ 309:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Settings; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_storage__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_storage__ = __webpack_require__(136);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -677,15 +591,15 @@ var Settings = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 311:
+/***/ 310:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return User; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(312);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(311);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(183);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -796,18 +710,108 @@ var User = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 312:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SumarioPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__ = __webpack_require__(118);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var SumarioPage = /** @class */ (function () {
+    function SumarioPage(vibration, navCtrl, navParams, modalCtrl, toastCtrl, loadingCtrl) {
+        this.vibration = vibration;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.modalCtrl = modalCtrl;
+        this.toastCtrl = toastCtrl;
+        this.loadingCtrl = loadingCtrl;
+    }
+    /**
+     * Navigate to the detail page for this item.
+     */
+    SumarioPage.prototype.abrirCap1 = function () {
+        this.navCtrl.push('ContextRespAerobicaPage');
+    };
+    SumarioPage.prototype.abrirCap2 = function () {
+        this.navCtrl.push('DefinicoesImportantesPage');
+    };
+    SumarioPage.prototype.abrirCap3 = function () {
+        this.navCtrl.push('EtapasRespAerobicaPage');
+    };
+    SumarioPage.prototype.abrirCap4 = function () {
+        this.navCtrl.push('GeralRespAerobicaPage');
+    };
+    SumarioPage.prototype.abrirCap5 = function () {
+        this.navCtrl.push('GeralGlicosePage');
+    };
+    SumarioPage.prototype.abrirCap6 = function () {
+        this.navCtrl.push('GeralCicloKrebesPage');
+    };
+    SumarioPage.prototype.abrirCap7 = function () {
+        this.navCtrl.push('GeralCadeiaTranspPage');
+    };
+    SumarioPage.prototype.abrirCap8 = function () {
+        this.navCtrl.push('ProducaoAtpPage');
+    };
+    SumarioPage.prototype.abrirCap9 = function () {
+        this.navCtrl.push('MitocondriaPage');
+    };
+    SumarioPage.prototype.abrirCap10 = function () {
+        this.navCtrl.push('DetalhadaGlicosePage');
+    };
+    SumarioPage.prototype.abrirCap11 = function () {
+        this.navCtrl.push('DetalhadaCicloKrebsPage');
+    };
+    SumarioPage.prototype.abrirCap12 = function () {
+        this.navCtrl.push('DetalhadaFosforilacaoPage');
+    };
+    SumarioPage.prototype.abrirCap13 = function () {
+        this.navCtrl.push('MontandoRespAerobicaPage');
+    };
+    SumarioPage.prototype.abrirCap14 = function () {
+        this.navCtrl.push('TestesPage');
+    };
+    SumarioPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'sumario',template:/*ion-inline-start:"C:\Users\paulo\Ionic\BioRespiracao\src\pages\sumario\sumario.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>SUMÁRIO</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content>\n  <ion-list>\n    \n    <ion-item (click)="abrirCap1()">\n    \n      <h2>CONTEXTUALIZANDO A RESPIRAÇÃO<br> AERÓBIA </h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap2()">\n        \n      <h2>DEFINIÇÕES IMPORTANTES SOBRE <br> RESPIRAÇÃO NA FORMA DE PERGUNTAS </h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap3()">\n        \n      <h2>ETAPAS DA RESPIRAÇÃO AERÓBIA</h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap4()">\n        \n      <h2>VISÃO GERAL DA RESPIRAÇÃO <br> AERÓBIA </h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap5()">\n        \n      <h2>VISÃO GERAL DA GLICÓLISE </h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap6()">\n        \n      <h2>VISÃO GERAL DO CICLO DE KREBES<br> OU DO ÁCIDO CÍTRICO </h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap7()">\n        \n      <h2>VISÃO GERAL DA CADEIA <br> TRANSPORTADORA DE ELÉTRONS</h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap8()">\n        \n      <h2>PRODUÇÃO DE ATP A PARTIR <br> DA OXIDAÇÃO COMPLETA DA GLICOSE</h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap9()">\n        \n      <h2>MITOCÔNDRIA</h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap10()">\n        \n      <h2>VISÃO DETALHADA DA GLICÓLISE </h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap11()">\n        \n      <h2>VISÃO DETALHADA DO CICLO DE KREBS </h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap12()">\n        \n      <h2>VISÃO DETALHADA DA FOSFORILAÇÃO<br> OXIDATIVA </h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap13()">\n        \n      <h2>MONTANDO A RESPIRAÇÃO AERÓBIA </h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n    <ion-item (click)="abrirCap14()">\n        \n      <h2>TESTES</h2>\n      <ion-icon item-end ios="ios-checkmark" md="md-checkmark" class="nextDiff"></ion-icon>\n    </ion-item>\n\n  </ion-list>\n\n  \n</ion-content>\n\n\n'/*ion-inline-end:"C:\Users\paulo\Ionic\BioRespiracao\src\pages\sumario\sumario.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]])
+    ], SumarioPage);
+    return SumarioPage;
+}());
+
+//# sourceMappingURL=sumario.js.map
+
+/***/ }),
+
 /***/ 330:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__ = __webpack_require__(133);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(135);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages__ = __webpack_require__(331);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers__ = __webpack_require__(119);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -836,20 +840,20 @@ var MyApp = /** @class */ (function () {
         this.rootPage = __WEBPACK_IMPORTED_MODULE_5__pages__["a" /* FirstRunPage */];
         this.pages = [
             { title: 'Sumario', component: 'SumarioPage' },
-            { title: 'Sumario', component: 'ContextRespAerobicaPage' },
-            { title: 'Sumario', component: 'DefinicoesImportantesPage' },
-            { title: 'Sumario', component: 'EtapasRespAerobicaPage' },
-            { title: 'Sumario', component: 'GeralRespAerobicaPage' },
-            { title: 'Sumario', component: 'GeralGlicosePage' },
-            { title: 'Sumario', component: 'GeralCicloKrebesPage' },
-            { title: 'Sumario', component: 'GeralCadeiaTranspPage' },
-            { title: 'Sumario', component: 'ProducaoAtpPage' },
-            { title: 'Sumario', component: 'MitocondriaPage' },
-            { title: 'Sumario', component: 'DetalhadaGlicosePage' },
-            { title: 'Sumario', component: 'DetalhadaCicloKrebsPage' },
-            { title: 'Sumario', component: 'DetalhadaFosforilacaoPage' },
-            { title: 'Sumario', component: 'MontandoRespAerobicaPage' },
-            { title: 'Sumario', component: 'TestesPage' }
+            { title: 'CONTEXTUALIZANDO A RESPIRAÇÃO AERÓBIA', component: 'ContextRespAerobicaPage' },
+            { title: 'DEFINIÇÕES IMPORTANTES SOBRE RESPIRAÇÃO NA FORMA DE PERGUNTAS', component: 'DefinicoesImportantesPage' },
+            { title: 'ETAPAS DA RESPIRAÇÃO AERÓBIA', component: 'EtapasRespAerobicaPage' },
+            { title: 'VISÃO GERAL DA RESPIRAÇÃO AERÓBIA', component: 'GeralRespAerobicaPage' },
+            { title: 'VISÃO GERAL DA GLICÓLISE', component: 'GeralGlicosePage' },
+            { title: 'VISÃO GERAL DO CICLO DE KREBES OU DO ÁCIDO CÍTRICO', component: 'GeralCicloKrebesPage' },
+            { title: 'VISÃO GERAL DA CADEIA TRANSPORTADORA DE ELÉTRONS', component: 'GeralCadeiaTranspPage' },
+            { title: 'PRODUÇÃO DE ATP A PARTIR DA OXIDAÇÃO COMPLETA DA GLICOSE', component: 'ProducaoAtpPage' },
+            { title: 'MITOCÔNDRIA', component: 'MitocondriaPage' },
+            { title: 'VISÃO DETALHADA DA GLICÓLISE', component: 'DetalhadaGlicosePage' },
+            { title: 'VISÃO DETALHADA DO CICLO DE KREBS', component: 'DetalhadaCicloKrebsPage' },
+            { title: 'VISÃO DETALHADA DA FOSFORILAÇÃO<br> OXIDATIVA', component: 'DetalhadaFosforilacaoPage' },
+            { title: 'MONTANDO A RESPIRAÇÃO AERÓBIA', component: 'MontandoRespAerobicaPage' },
+            { title: 'TESTES', component: 'TestesPage' }
         ];
         platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.
@@ -905,17 +909,18 @@ var MyApp = /** @class */ (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_4_ionic_angular__["h" /* Nav */]),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["h" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["h" /* Nav */]) === "function" && _a || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["h" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'side-main-menu',
             template: "<ion-menu [content]=\"content\">\n      <ion-header class=\"headerMAin\">\n        <ion-toolbar color=\"white\">\n        <ion-list class=\"headerMAin\">\n        <ion-item style=\"background: white !important;border-bottom: 0.55px solid #000000!important;\">\n          <ion-list class=\"logoImage\" menuClose (click)=\"openPage(pages[4])\">\n            <div class=\"circle-pic\" text-center #profilePic [style.background-image]=\"'url(../../assets/img/mestrado-logo.png)'\"></div>\n            <!--<img class=\"circle-pic\" src=\"../../assets/img/mestrado.jpg\"/>-->\n          </ion-list>\n          <h1 class=\"userName\">Bio Respira\u00E7\u00E3o</h1>\n          <h3 class=\"userDetails\">Antonio Delm\u00E1rio Alves dos Santos</h3>\n        </ion-item>\n      </ion-list>\n        </ion-toolbar>\n      </ion-header>\n\n      <ion-content class=\"sideMenuIoncContent\">\n        \n        <ion-list>\n          \n        <button menuClose ion-item no-lines style=\"border-top: 0.55px solid #383838; !important;\"\n                [class.activeHIghlight]=\"checkActive(pages[0])\" (click)=\"openPage(pages[0])\" class=\"buttonSIdeBAr\">\n                <h6>SUM\u00C1RIO</h6>\n        </button>\n\n        <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[1])\"\n                (click)=\"openPage(pages[1])\" class=\"buttonSIdeBAr\">\n                <h6>CONTEXTUALIZANDO A RESPIRA\u00C7\u00C3O <br> AER\u00D3BIA</h6>\n        </button>\n\n        <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[2])\"\n                (click)=\"openPage(pages[2])\" class=\"buttonSIdeBAr\">\n                <h6>DEFINI\u00C7\u00D5ES IMPORTANTES SOBRE <br> RESPIRA\u00C7\u00C3O</h6>\n        </button>\n\n        <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[3])\"\n                (click)=\"openPage(pages[3])\" class=\"buttonSIdeBAr\">\n                <h6>ETAPAS DA RESPIRA\u00C7\u00C3O AER\u00D3BIA</h6>\n        </button>\n\n        <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[4])\"\n                (click)=\"openPage(pages[4])\" class=\"buttonSIdeBAr\">\n                <h6>VIS\u00C3O GERAL DA RESPIRA\u00C7\u00C3O <br> AER\u00D3BIA </h6>\n        </button>\n\n        <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[5])\"\n                (click)=\"openPage(pages[5])\" class=\"buttonSIdeBAr\">\n                <h6>VIS\u00C3O GERAL DA GLIC\u00D3LISE</h6>\n        </button>\n\n        <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[6])\"\n                (click)=\"openPage(pages[6])\" class=\"buttonSIdeBAr\">\n                <h6>VIS\u00C3O GERAL DO CICLO DE KREBES<br> OU DO \u00C1CIDO C\u00CDTRICO</h6>\n        </button>\n\n        <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[7])\"\n                (click)=\"openPage(pages[7])\" class=\"buttonSIdeBAr\">\n                <h6>VIS\u00C3O GERAL DA CADEIA <br> TRANSPORTADORA DE EL\u00C9TRONS</h6>\n        </button>\n\n        <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[8])\"\n                (click)=\"openPage(pages[8])\" class=\"buttonSIdeBAr\">\n                <h6>PRODU\u00C7\u00C3O DE ATP A PARTIR <br> DA OXIDA\u00C7\u00C3O COMPLETA DA GLICOSE</h6>\n        </button>\n\n        <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[9])\"\n                (click)=\"openPage(pages[9])\" class=\"buttonSIdeBAr\">\n                <h6>MITOC\u00D4NDRIA</h6>\n        </button>\n\n        <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[10])\"\n                (click)=\"openPage(pages[10])\" class=\"buttonSIdeBAr\">\n                <h6>VIS\u00C3O DETALHADA DA GLIC\u00D3LISE</h6>\n        </button>\n\n        <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[11])\"\n                (click)=\"openPage(pages[11])\" class=\"buttonSIdeBAr\">\n                <h6>VIS\u00C3O DETALHADA DO CICLO DE KREBS</h6>\n        </button>\n\n        <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[12])\"\n                (click)=\"openPage(pages[12])\" class=\"buttonSIdeBAr\">\n                <h6>VIS\u00C3O DETALHADA DA FOSFORILA\u00C7\u00C3O<br> OXIDATIVA</h6>\n        </button>\n\n        <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[13])\"\n                (click)=\"openPage(pages[13])\" class=\"buttonSIdeBAr\">\n                <h6>MONTANDO A RESPIRA\u00C7\u00C3O AER\u00D3BIA</h6>\n        </button>\n\n        <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[14])\"\n                (click)=\"openPage(pages[14])\" class=\"buttonSIdeBAr\">\n                <h6>TESTES</h6>\n        </button>\n          \n        </ion-list>\n      </ion-content>\n    </ion-menu>\n    <ion-nav #content [root]=\"rootPage\"></ion-nav>"
         }),
-        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["k" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["k" /* Platform */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_6__providers__["c" /* Settings */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__providers__["c" /* Settings */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["a" /* Config */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["a" /* Config */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["l" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["l" /* ToastController */]) === "function" && _h || Object, typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["f" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["f" /* LoadingController */]) === "function" && _j || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["k" /* Platform */], __WEBPACK_IMPORTED_MODULE_6__providers__["c" /* Settings */],
+            __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__["a" /* SplashScreen */],
+            __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["l" /* ToastController */], __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["f" /* LoadingController */]])
     ], MyApp);
     return MyApp;
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j;
 }());
 
 //# sourceMappingURL=app.component.js.map
@@ -933,26 +938,6 @@ var FirstRunPage = 'SumarioPage';
 // The main page the user will see as they use the app over a long period of time.
 // Change this if not using tabs
 var MainPage = 'SumarioPage';
-//# sourceMappingURL=index.js.map
-
-/***/ }),
-
-/***/ 58:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__api_api__ = __webpack_require__(184);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__api_api__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mocks_providers_items__ = __webpack_require__(185);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__mocks_providers_items__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__settings_settings__ = __webpack_require__(310);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__settings_settings__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__user_user__ = __webpack_require__(311);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_3__user_user__["a"]; });
-
-
-
-
 //# sourceMappingURL=index.js.map
 
 /***/ })
