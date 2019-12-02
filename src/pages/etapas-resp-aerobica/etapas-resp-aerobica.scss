@@ -2,13 +2,6 @@ page-etapas-resp-aerobica {
     .searchbar-md .searchbar-input{
         border-radius: 23px !important;
       }
-      img{
-        border-radius: 50% !important;
-        overflow: hidden !important;
-        width: 45px !important;
-        height: 45px !important;
-        border: 2px solid  map_get($colors,theme_color) !important;
-      }
     
       .cssForRoundSLidingItems .button-inner{
         background-color: #ffffff21;
@@ -30,7 +23,7 @@ page-etapas-resp-aerobica {
         margin-top: 10px !important;
         font-size: 2.1em !important;
       }
-      h2 {
+      h5 {
         color:  map_get($colors,theme_color) !important;
       }
       .nextDiff{

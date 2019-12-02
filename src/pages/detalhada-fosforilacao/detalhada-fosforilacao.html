@@ -1,18 +1,41 @@
-<!--
-  Generated template for the DetalhadaFosforilacaoPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>detalhada-fosforilacao</ion-title>
-  </ion-navbar>
-
-</ion-header>
+    <ion-navbar color="primary">
+      <ion-buttons left>
+        <button ion-button icon-only menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-title>VISÃO DETALHADA DA <br> fosforilação</ion-title>
+    </ion-navbar>
+  </ion-header>
 
 
 <ion-content padding>
+    <img src="../../assets/img/slide11_1.png" >
+    <img src="../../assets/img/slide11_2.png" >
 
+    <a (click)="Membrana = !Membrana;">  <h5>Membrana interna da mitocôndria</h5>
+    </a>
+    
+    <img src="../../assets/img/membrana.gif" [hidden]="!Membrana">
+
+    <a (click)="Complexos = !Complexos; proteina1 = false; proteina2 = false; proteina3 = false; proteina4 = false;">  <h5>Complexos enzimáticos I, II, III e IV</h5>
+    </a>
+
+    <img src="../../assets/img/tabela19.png" [hidden]="!Complexos">
+    
+    <a [hidden]="!Complexos" (click)="proteina1 = !proteina1; proteina2 = false; proteina3 = false; proteina4 = false;">  <h6>I.   NADH-desidrogenase</h6></a>
+    <img src="../../assets/img/complexo1_1.png" [hidden]="!proteina1">
+    <img src="../../assets/img/complexo1_2.png" [hidden]="!proteina1">
+    <a [hidden]="!Complexos" (click)="proteina2 = !proteina2; proteina1 = false; proteina3 = false; proteina4 = false;">  <h6>II.  Succinato-desidrogenase</h6></a>
+    <img src="../../assets/img/complexo2.png" [hidden]="!proteina2">
+    <a [hidden]="!Complexos" (click)="proteina3 = !proteina3; proteina1 = false; proteina2 = false; proteina4 = false;">  <h6>III. Ubiquinona</h6></a>
+    <img src="../../assets/img/complexo3_1.png" [hidden]="!proteina3">
+    <img src="../../assets/img/complexo3_2.png" [hidden]="!proteina3">
+    <a [hidden]="!Complexos" (click)="proteina4 = !proteina4; proteina1 = false; proteina2 = false; proteina3 = false;">  <h6>IV.  Citocromo-oxidase</h6></a>
+    <img src="../../assets/img/complexo4_1.png" [hidden]="!proteina4">
+    <img src="../../assets/img/complexo4_2.png" [hidden]="!proteina4">
+
+
+    <img src="../../assets/img/fim.png" [hidden]="!Complexos">
 </ion-content>

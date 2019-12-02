@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the DetalhadaFosforilacaoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { 
+  IonicPage,
+  ModalController,
+  NavController,
+  NavParams,
+  ToastController,
+  LoadingController } from 'ionic-angular';
+  import {Vibration} from '@ionic-native/vibration';
 
 @IonicPage()
 @Component({

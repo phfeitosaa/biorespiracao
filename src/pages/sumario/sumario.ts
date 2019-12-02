@@ -73,11 +73,7 @@ export class SumarioPage {
     this.navCtrl.push('DetalhadaFosforilacaoPage');
   }
 
-  abrirCap13() {
-    this.navCtrl.push('MontandoRespAerobicaPage');
-  }
-
-  abrirCap14() {
-    this.navCtrl.push('TestesPage');
-  }
+  // abrirCap13() {
+  //   this.navCtrl.push('TestesPage');
+  // }
 }
