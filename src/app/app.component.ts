@@ -92,19 +92,17 @@ import {Settings} from '../providers';
                 (click)="openPage(pages[12])" class="buttonSIdeBAr">
                 <h6>VISÃO DETALHADA DA FOSFORILAÇÃO<br> OXIDATIVA</h6>
         </button>
+
+        <button menuClose ion-item no-lines [class.activeHIghlight]="checkActive(pages[13])"
+                (click)="openPage(pages[13])" class="buttonSIdeBAr">
+                <h6>TESTES</h6>
+        </button>
           
         </ion-list>
       </ion-content>
     </ion-menu>
     <ion-nav #content [root]="rootPage"></ion-nav>`
 })
-
-
-// <button menuClose ion-item no-lines [class.activeHIghlight]="checkActive(pages[13])"
-//                 (click)="openPage(pages[13])" class="buttonSIdeBAr">
-//                 <h6>TESTES</h6>
-//         </button>
-
 
 export class MyApp {
 
@@ -126,7 +124,8 @@ export class MyApp {
     {title: 'MITOCÔNDRIA', component: 'MitocondriaPage'},
     {title: 'VISÃO DETALHADA DA GLICÓLISE', component: 'DetalhadaGlicosePage'},
     {title: 'VISÃO DETALHADA DO CICLO DE KREBS', component: 'DetalhadaCicloKrebsPage'},
-    {title: 'VISÃO DETALHADA DA FOSFORILAÇÃO<br> OXIDATIVA', component: 'DetalhadaFosforilacaoPage'}
+    {title: 'VISÃO DETALHADA DA FOSFORILAÇÃO<br> OXIDATIVA', component: 'DetalhadaFosforilacaoPage'},
+    {title: 'TESTES', component: 'TestesPage'}
   ]
 
   // {title: 'TESTES', component: 'TestesPage'}

@@ -25,4 +25,8 @@ export class TestesPage {
     console.log('ionViewDidLoad TestesPage');
   }
 
+  onClick(){
+    var mostrarResultados = !mostrarResultados;
+    var isEnabled = !isEnabled;
+  }
 }

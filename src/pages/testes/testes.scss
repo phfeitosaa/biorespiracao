@@ -18,13 +18,17 @@ page-testes {
     
       .cssForRoundSLidingItems,.cssForRoundSLidingItems ion-item{
         height: 75px !important;
+        padding: 0%;
       }
       .cssForRoundSLidingItems  ion-icon:not(.nextDiff){
         margin-top: 10px !important;
         font-size: 2.1em !important;
       }
-      h5 {
+      ion-card-title {
+        font-size: 12pt !important;
         color:  map_get($colors,theme_color) !important;
+        word-wrap: break-word;
+        white-space: normal;
       }
       .nextDiff{
         color:  map_get($colors,theme_color);
@@ -36,6 +40,7 @@ page-testes {
     
       .login{
         color:  map_get($colors,theme_color) !important;
+        outline: map_get($colors,theme_color) !important;
       }
       ion-searchbar{
         background: map_get($colors,theme_color) !important;
@@ -43,5 +48,30 @@ page-testes {
     
       .toolbar-background {
         background-color:  map_get($colors,theme_color) !important;
+      }
+
+      ion-label {
+        font-size: small;
+      }
+
+      .mostrarReposta{
+        background-color: greenyellow !important;
+      }
+
+      .esconderResposta {
+        background-color: transparent !important;
+      }
+
+      .button-outline {
+        color: map_get($colors,theme_color) !important;
+      }
+
+      ion-card-content {
+        padding: 0% !important;
+      }
+
+      ion-label, ion-radio {
+        padding: 0% !important;
+        white-space: normal;
       }
 }

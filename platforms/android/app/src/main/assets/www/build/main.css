@@ -37216,6 +37216,7 @@ page-testes .cssForRoundSLidingItems button {
 
 page-testes .cssForRoundSLidingItems, page-testes .cssForRoundSLidingItems ion-item {
   height: 75px !important;
+  padding: 0%;
 }
 
 page-testes .cssForRoundSLidingItems ion-icon:not(.nextDiff) {
@@ -37223,8 +37224,11 @@ page-testes .cssForRoundSLidingItems ion-icon:not(.nextDiff) {
   font-size: 2.1em !important;
 }
 
-page-testes h5 {
+page-testes ion-card-title {
+  font-size: 12pt !important;
   color: #1ABC9C !important;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
 page-testes .nextDiff {
@@ -37237,6 +37241,7 @@ page-testes ion-item-options[side=left] ion-icon {
 
 page-testes .login {
   color: #1ABC9C !important;
+  outline: #1ABC9C !important;
 }
 
 page-testes ion-searchbar {
@@ -37245,4 +37250,29 @@ page-testes ion-searchbar {
 
 page-testes .toolbar-background {
   background-color: #1ABC9C !important;
+}
+
+page-testes ion-label {
+  font-size: small;
+}
+
+page-testes .mostrarReposta {
+  background-color: greenyellow !important;
+}
+
+page-testes .esconderResposta {
+  background-color: transparent !important;
+}
+
+page-testes .button-outline {
+  color: #1ABC9C !important;
+}
+
+page-testes ion-card-content {
+  padding: 0% !important;
+}
+
+page-testes ion-label, page-testes ion-radio {
+  padding: 0% !important;
+  white-space: normal;
 }
