@@ -44,4 +44,51 @@ page-geral-cadeia-transp {
       .toolbar-background {
         background-color:  map_get($colors,theme_color) !important;
       }
+
+      ion-label {
+        background-color: transparent !important;
+        font-size: small;
+        color: black;
+        word-wrap: break-word;
+        white-space: normal;
+        font-weight: normal;
+      }
+
+      .mostrarReposta{
+        background-color: greenyellow !important;
+        font-size: small;
+        color: black;
+        word-wrap: break-word;
+        white-space: normal;
+        font-weight: normal;
+      }
+
+      .esconderResposta {
+        background-color: transparent !important;
+        font-size: small;
+        color: black;
+        word-wrap: break-word;
+        white-space: normal;
+        font-weight: normal;
+      }
+
+      .button-outline {
+        color: map_get($colors,theme_color) !important;
+      }
+
+      ion-card-content {
+        padding: 0% !important;
+      }
+
+      ion-card-title {
+        font-size: 12pt !important;
+        color:  map_get($colors,theme_color) !important;
+        word-wrap: break-word;
+        white-space: normal;
+      }
+
+      ion-label, ion-radio {
+        padding: 0% !important;
+        white-space: normal;
+      }
 }

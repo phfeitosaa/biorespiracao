@@ -12,11 +12,155 @@
 
 <ion-content padding>
 
-    <img src="../../assets/img/slide5.png">
+    <img src="../../assets/img/slide5.png" #slide5 (click)="presentImage(slide5)">
 
     <h5>Reação do ácido pirúvico com a coenzima A (CoA) ao chegar na matriz mitocondrial:</h5>
     <h6>2C₃H₄O₃ + 2CoA + 2NAD⁺ → 2C₂H₃O⁺ + 2NADH + 2CO₂ + 2H⁺ </h6>
     <h5>As oito reações químicas do ciclo de Krebs , terão a participação de moléculas de FAD, que em resumo apresenta a seguinte reação simplificada:</h5>
     <h6>2C₂H₃O⁺ + 6NAD⁺ + 2FAD + 2H⁺ +2ADP + 2Pi → 6NADH + 2FADH₂ + 2ATP </h6>
+
+    <a (click)="teste = !teste;"><h5>TESTE (Clique para abrir)</h5></a>
+    
+    <div [hidden]="!teste">
+
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>01. No ciclo do ácido cítrico ou ciclo de Krebs, são produzidos:</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-list  radio-group no-lines no-padding>
+            <ion-item>
+            <ion-radio value="A"></ion-radio>
+            <ion-label>a) 4 NADH.</ion-label>
+            </ion-item>
+            <ion-item>
+            <ion-radio value=”B”> </ion-radio>
+            <ion-label>b) 6 NADH.</ion-label>
+            </ion-item>
+            <ion-item [class.mostrarReposta]="mostrarResultados" [class.esconderResposta]="!mostrarResultados">
+            <ion-radio value=”C” ></ion-radio>
+            <ion-label>c) 8 NADH.</ion-label>
+            </ion-item>
+            <ion-item>
+            <ion-radio value=”D”> </ion-radio>
+            <ion-label>d) 10 NADH.</ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+
+  
+      <ion-card>
+          <ion-card-header>
+            <ion-card-title>02. No ciclo de Krebs são produzidas:</ion-card-title>
+          </ion-card-header>
+          <ion-card-content >
+          <ion-list radio-group no-lines no-padding>
+              <ion-item>
+              <ion-radio value="A"></ion-radio>
+              <ion-label>a) 2 CO₂.</ion-label>
+              </ion-item>
+              <ion-item>
+              <ion-radio value=”B”> </ion-radio>
+              <ion-label>b) 3 CO₂.</ion-label>
+              </ion-item>
+              <ion-item >
+              <ion-radio value=”C” ></ion-radio>
+              <ion-label>c) 4 CO₂.</ion-label>
+              </ion-item>
+              <ion-item [class.mostrarReposta]="mostrarResultados" [class.esconderResposta]="!mostrarResultados">
+              <ion-radio value=”D”> </ion-radio>
+              <ion-label>d) 6 CO₂.</ion-label>
+              </ion-item>
+            </ion-list>
+        </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+            <ion-card-header>
+              <ion-card-title>03. No ciclo de Krebs, há a produção de:</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+                <ion-list  radio-group no-lines no-padding>
+                    <ion-item [class.mostrarReposta]="mostrarResultados" [class.esconderResposta]="!mostrarResultados">
+                    <ion-radio value="A"></ion-radio>
+                    <ion-label>a) 2 FADH₂.</ion-label>
+                    </ion-item>
+                    <ion-item>
+                    <ion-radio value=”B”></ion-radio>
+                    <ion-label>b) 4 FADH₂.</ion-label>
+                    </ion-item>
+                    <ion-item>
+                    <ion-radio value=”C”></ion-radio>
+                    <ion-label>c) 6 FADH₂.</ion-label>
+                    </ion-item>
+                    <ion-item>
+                    <ion-radio value=”D”></ion-radio>
+                    <ion-label>d) 8 FADH₂.</ion-label>
+                    </ion-item>
+                  </ion-list>
+        
+      </ion-card-content>
+      </ion-card>
+
+        <ion-card>
+            <ion-card-header>
+              <ion-card-title>04. Sobre o ciclo de Krebs é correto afirmar que:</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+                <ion-list  radio-group no-lines no-padding>
+                    <ion-item>
+                    <ion-radio value="A"></ion-radio>
+                    <ion-label>a) Moléculas água são formadas no final desta etapa de respiração aeróbia.</ion-label>
+                    </ion-item>
+                    <ion-item [class.mostrarReposta]="mostrarResultados" [class.esconderResposta]="!mostrarResultados">
+                    <ion-radio value=”B”></ion-radio>
+                    <ion-label>b) Se houver oxigênio nas mitocôndrias, a glicólise produz piruvato que atravessa as membranas da mitocôndria, sendo degrado na matriz mitocondrial.</ion-label>
+                    </ion-item>
+                    <ion-item>
+                    <ion-radio value=”C”></ion-radio>
+                    <ion-label>c) As moléculas de coenzima A ( CoA), são consumidas durante a degradação do piruvato.</ion-label>
+                    </ion-item>
+                    <ion-item>
+                    <ion-radio value=”D”></ion-radio>
+                    <ion-label>d) O ciclo de Krebs independe da presença de gás oxigênio nas mitocôndrias.</ion-label>
+                    </ion-item>
+                  </ion-list>
+        
+      </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>05. O ciclo de Krebs tem um saldo energético de:</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-list  radio-group no-lines no-padding>
+                <ion-item [class.mostrarReposta]="mostrarResultados" [class.esconderResposta]="!mostrarResultados">
+                <ion-radio value="A"></ion-radio>
+                <ion-label>a) 2 ATPs.</ion-label>
+                </ion-item>
+                <ion-item>
+                <ion-radio value=”B”></ion-radio>
+                <ion-label>b) 4 ATPs.</ion-label>
+                </ion-item>
+                <ion-item>
+                <ion-radio value=”C”></ion-radio>
+                <ion-label>c) 6ATPs.</ion-label>
+                </ion-item>
+                <ion-item>
+                <ion-radio value=”D”></ion-radio>
+                <ion-label>d) 8 ATPs.</ion-label>
+                </ion-item>
+              </ion-list>
+    
+  </ion-card-content>
+  </ion-card>
+
+      <div margin style="align-content: center; align-items: center; text-align: center;">
+        <button ion-button class="login" expand="full" outline round  (click)="mostrarResultados = !mostrarResultados;">Mostrar Respostas</button>
+      </div>
+
+    </div>
 
 </ion-content>

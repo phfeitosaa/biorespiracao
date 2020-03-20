@@ -13,9 +13,6 @@
     "cordova-plugin-ionic-keyboard": {
       "PACKAGE_NAME": "com.biorespiracao"
     },
-    "cordova-plugin-ionic-webview": {
-      "PACKAGE_NAME": "com.biorespiracao"
-    },
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "com.biorespiracao"
     },
@@ -23,6 +20,10 @@
       "PACKAGE_NAME": "com.biorespiracao"
     },
     "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.biorespiracao"
+    },
+    "cordova-plugin-ionic-webview": {
+      "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+",
       "PACKAGE_NAME": "com.biorespiracao"
     }
   },

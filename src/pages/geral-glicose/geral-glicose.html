@@ -12,11 +12,134 @@
 
 <ion-content padding>
 
-    <img src="../../assets/img/slide4.png">
+    <img src="../../assets/img/slide4.png" #slide4 (click)="presentImage(slide4)">
 
     <h6>Formação de 2NADH: 2NAD⁺ + 4H⁺ + 4e⁻ → 2NADH + 2H⁺ </h6>
     <h6>Resumo da glicólise: C₆H₁₂O₆ + 2NAD⁺ + 4e⁻ + 4H⁺ + 4ADP + 4Pi → 2NADH + 4ATP + 2H⁺ + 2C₃H₄O₃ </h6>
     <h6>Consumo de 2ATP: 2ATP → ADP + 2Pi </h6>
     <h6>Saldo total de 2ATP (4ATP formados – 2ATP gastos).</h6>
+    
+    <a (click)="teste = !teste;"><h5>TESTE (Clique para abrir)</h5></a>
+    
+    <div [hidden]="!teste">
+
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>01. O investimento, produção e o saldo de ATPs na glicólise é, respectivamente, de:</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-list  radio-group no-lines no-padding>
+            <ion-item>
+            <ion-radio value="A"></ion-radio>
+            <ion-label>a) 2ATPs, 3ATPs e 2ATPs.</ion-label>
+            </ion-item>
+            <ion-item [class.mostrarReposta]="mostrarResultados" [class.esconderResposta]="!mostrarResultados">
+            <ion-radio value=”B”> </ion-radio>
+            <ion-label>b) 2ATPs, 4ATPs e 2ATPs.</ion-label>
+            </ion-item>
+            <ion-item>
+            <ion-radio value=”C” ></ion-radio>
+            <ion-label>c) 2ATPs, 5ATPs e 2ATPs.</ion-label>
+            </ion-item>
+            <ion-item>
+            <ion-radio value=”D”> </ion-radio>
+            <ion-label>d) 2ATPs, 6ATPs e 2ATPs.</ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+
+  
+      <ion-card>
+          <ion-card-header>
+            <ion-card-title>02. Na glicólise são produzidos:</ion-card-title>
+          </ion-card-header>
+          <ion-card-content >
+          <ion-list radio-group no-lines no-padding>
+              <ion-item [class.mostrarReposta]="mostrarResultados" [class.esconderResposta]="!mostrarResultados">
+              <ion-radio value="A"></ion-radio>
+              <ion-label>a) 2 NADH.</ion-label>
+              </ion-item>
+              <ion-item>
+              <ion-radio value=”B”> </ion-radio>
+              <ion-label>b) 3 NADH.</ion-label>
+              </ion-item>
+              <ion-item >
+              <ion-radio value=”C” ></ion-radio>
+              <ion-label>c) 4 NADH.</ion-label>
+              </ion-item>
+              <ion-item>
+              <ion-radio value=”D”> </ion-radio>
+              <ion-label>d) 5 NADH.</ion-label>
+              </ion-item>
+            </ion-list>
+        </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+            <ion-card-header>
+              <ion-card-title>03. A glicólise ocorre no (a):</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+                <ion-list  radio-group no-lines no-padding>
+                    <ion-item>
+                    <ion-radio value="A"></ion-radio>
+                    <ion-label>a) Matriz mitocondrial.</ion-label>
+                    </ion-item>
+                    <ion-item>
+                    <ion-radio value=”B”></ion-radio>
+                    <ion-label>b) Cristas mitocondriais.</ion-label>
+                    </ion-item>
+                    <ion-item [class.mostrarReposta]="mostrarResultados" [class.esconderResposta]="!mostrarResultados">
+                    <ion-radio value=”C”></ion-radio>
+                    <ion-label>c) Citoplasma.</ion-label>
+                    </ion-item>
+                    <ion-item>
+                    <ion-radio value=”D”></ion-radio>
+                    <ion-label>d) Membrana interna da mitocôndria.</ion-label>
+                    </ion-item>
+                  </ion-list>
+        
+        
+        
+        
+      </ion-card-content>
+      </ion-card>
+
+        <ion-card>
+            <ion-card-header>
+              <ion-card-title>04. A glicólise da respiração aeróbia se constitui na quebra ou degradação parcial da molécula de glicose formando:</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+                <ion-list  radio-group no-lines no-padding>
+                    <ion-item [class.mostrarReposta]="mostrarResultados" [class.esconderResposta]="!mostrarResultados">
+                    <ion-radio value="A"></ion-radio>
+                    <ion-label>a) 4ATPs, 2NADH e duas moléculas de ácidos pirúvicos.</ion-label>
+                    </ion-item>
+                    <ion-item>
+                    <ion-radio value=”B”></ion-radio>
+                    <ion-label>b) 2ATPs, 2NADH e uma molécula de ácido láctico.</ion-label>
+                    </ion-item>
+                    <ion-item>
+                    <ion-radio value=”C”></ion-radio>
+                    <ion-label>c) 4ATPs, 4NADH e duas moléculas de ácidos pirúvicos.</ion-label>
+                    </ion-item>
+                    <ion-item>
+                    <ion-radio value=”D”></ion-radio>
+                    <ion-label>d) 2 ATPs, 4 NADH e uma molécula de etanol.</ion-label>
+                    </ion-item>
+                  </ion-list>
+        
+        
+        
+        
+      </ion-card-content>
+      </ion-card>
+
+      <div margin style="align-content: center; align-items: center; text-align: center;">
+        <button ion-button class="login" expand="full" outline round  (click)="mostrarResultados = !mostrarResultados;">Mostrar Respostas</button>
+      </div>
+
+    </div>
 
 </ion-content>

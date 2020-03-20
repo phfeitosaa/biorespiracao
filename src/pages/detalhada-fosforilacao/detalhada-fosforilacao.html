@@ -5,37 +5,37 @@
           <ion-icon name="menu"></ion-icon>
         </button>
       </ion-buttons>
-      <ion-title>VISÃO DETALHADA DA <br> fosforilação</ion-title>
+      <ion-title>VISÃO DETALHADA DA <br> FOSFORILAÇÃO OXIDATIVA</ion-title>
     </ion-navbar>
   </ion-header>
 
 
 <ion-content padding>
-    <img src="../../assets/img/slide11_1.png" >
-    <img src="../../assets/img/slide11_2.png" >
+    <img src="../../assets/img/slide11_1.png" #slide11_1 (click)="presentImage(slide11_1)">
+    <img src="../../assets/img/slide11_2.png" #slide11_2 (click)="presentImage(slide11_2)">
 
     <a (click)="Membrana = !Membrana;">  <h5>Membrana interna da mitocôndria</h5>
     </a>
     
-    <img src="../../assets/img/membrana.gif" [hidden]="!Membrana">
+    <img src="../../assets/img/membrana.gif" [hidden]="!Membrana" #membrana (click)="presentImage(membrana)">
 
     <a (click)="Complexos = !Complexos; proteina1 = false; proteina2 = false; proteina3 = false; proteina4 = false;">  <h5>Complexos enzimáticos I, II, III e IV</h5>
     </a>
 
-    <img src="../../assets/img/tabela19.png" [hidden]="!Complexos">
+    <img src="../../assets/img/tabela19.png" [hidden]="!Complexos" #tabela19 (click)="presentImage(tabela19)">
     
     <a [hidden]="!Complexos" (click)="proteina1 = !proteina1; proteina2 = false; proteina3 = false; proteina4 = false;">  <h6>I.   NADH-desidrogenase</h6></a>
-    <img src="../../assets/img/complexo1_1.png" [hidden]="!proteina1">
-    <img src="../../assets/img/complexo1_2.png" [hidden]="!proteina1">
+    <img src="../../assets/img/complexo1_1.png" [hidden]="!proteina1" #complexo1_1 (click)="presentImage(complexo1_1)">
+    <img src="../../assets/img/complexo1_2.png" [hidden]="!proteina1" #complexo1_2 (click)="presentImage(complexo1_2)">
     <a [hidden]="!Complexos" (click)="proteina2 = !proteina2; proteina1 = false; proteina3 = false; proteina4 = false;">  <h6>II.  Succinato-desidrogenase</h6></a>
-    <img src="../../assets/img/complexo2.png" [hidden]="!proteina2">
+    <img src="../../assets/img/complexo2.png" [hidden]="!proteina2" #complexo2 (click)="presentImage(complexo2)">
     <a [hidden]="!Complexos" (click)="proteina3 = !proteina3; proteina1 = false; proteina2 = false; proteina4 = false;">  <h6>III. Ubiquinona</h6></a>
-    <img src="../../assets/img/complexo3_1.png" [hidden]="!proteina3">
-    <img src="../../assets/img/complexo3_2.png" [hidden]="!proteina3">
+    <img src="../../assets/img/complexo3_1.png" [hidden]="!proteina3" #complexo3_1 (click)="presentImage(complexo3_1)">
+    <img src="../../assets/img/complexo3_2.png" [hidden]="!proteina3" #complexo3_2 (click)="presentImage(complexo3_2)">
     <a [hidden]="!Complexos" (click)="proteina4 = !proteina4; proteina1 = false; proteina2 = false; proteina3 = false;">  <h6>IV.  Citocromo-oxidase</h6></a>
-    <img src="../../assets/img/complexo4_1.png" [hidden]="!proteina4">
-    <img src="../../assets/img/complexo4_2.png" [hidden]="!proteina4">
+    <img src="../../assets/img/complexo4_1.png" [hidden]="!proteina4" #complexo4_1 (click)="presentImage(complexo4_1)">
+    <img src="../../assets/img/complexo4_2.png" [hidden]="!proteina4" #complexo4_2 (click)="presentImage(complexo4_2)">
 
 
-    <img src="../../assets/img/fim.png" [hidden]="!Complexos">
+    <img src="../../assets/img/fim.png" [hidden]="!Complexos" #fim (click)="presentImage(fim)">
 </ion-content>

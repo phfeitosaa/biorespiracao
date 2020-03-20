@@ -76,4 +76,8 @@ export class SumarioPage {
   abrirCap13() {
     this.navCtrl.push('TestesPage');
   }
+
+  abrirCap14() {
+    this.navCtrl.push('BibliografiaPage');
+  }
 }

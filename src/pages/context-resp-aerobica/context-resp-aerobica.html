@@ -20,11 +20,13 @@
     realizado pelos seres vivos, sejam por meio de mecanismos autotróficos ou heterotróficos na 
     produção de <a (click)="mostrarATP = !mostrarATP;">ATP</a>.</p>
 
-    <img src="../../assets/img/atp.gif" [hidden]="!mostrarATP"> 
+    <img src="../../assets/img/atp.gif" [hidden]="!mostrarATP" #atp (click)="presentImage(atp)">
+    <img src="../../assets/img/atp2.png" [hidden]="!mostrarATP" #atp2 (click)="presentImage(atp2)">
 
     <p>É importante lembrar que os açúcares degradados durantes as etapas da respiração aeróbia, são 
     produzidos pelos seres autotróficos, sendo a <a (click)="mostrarFotossintese = !mostrarFotossintese;"> fotossíntese </a> 
-    <img src="../../assets/img/fotossintese.png" [hidden]="!mostrarFotossintese"> 
+    <img src="../../assets/img/fotossintese.png" [hidden]="!mostrarFotossintese" #fotossintese (click)="presentImage(fotossintese)">
+    <img src="../../assets/img/fotossintese2.png" [hidden]="!mostrarFotossintese" #fotossintese2 (click)="presentImage(fotossintese2)"> 
     o principal processo anabólico (processo endergônico) de produção e, portanto, de armazenamento inicial 
     de energia química a ser transferida por meio do fluxo de energia e matéria nos demais níveis tróficos 
     das cadeias alimentares do planeta Terra. 

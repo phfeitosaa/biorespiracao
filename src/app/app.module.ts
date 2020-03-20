@@ -17,6 +17,8 @@ import { Vibration } from '@ionic-native/vibration';
 
 import {SumarioPageModule} from "../pages/sumario/sumario.module";
 
+import { IonicImageViewerModule } from 'ionic-img-viewer';
+
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
 export function createTranslateLoader(http: HttpClient) {
@@ -54,7 +56,8 @@ export function provideSettings(storage: Storage) {
       }
     }),
     IonicModule.forRoot(MyApp),
-    IonicStorageModule.forRoot()
+    IonicStorageModule.forRoot(),
+    IonicImageViewerModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

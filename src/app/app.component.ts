@@ -97,6 +97,11 @@ import {Settings} from '../providers';
                 (click)="openPage(pages[13])" class="buttonSIdeBAr">
                 <h6>TESTES</h6>
         </button>
+
+        <button menuClose ion-item no-lines [class.activeHIghlight]="checkActive(pages[14])"
+                (click)="openPage(pages[14])" class="buttonSIdeBAr">
+                <h6>BIBLIOGRAFIA</h6>
+        </button>
           
         </ion-list>
       </ion-content>
@@ -125,7 +130,8 @@ export class MyApp {
     {title: 'VISÃO DETALHADA DA GLICÓLISE', component: 'DetalhadaGlicosePage'},
     {title: 'VISÃO DETALHADA DO CICLO DE KREBS', component: 'DetalhadaCicloKrebsPage'},
     {title: 'VISÃO DETALHADA DA FOSFORILAÇÃO<br> OXIDATIVA', component: 'DetalhadaFosforilacaoPage'},
-    {title: 'TESTES', component: 'TestesPage'}
+    {title: 'TESTES', component: 'TestesPage' },
+    {title: 'BIBLIOGRAFIA', component: 'BibliografiaPage' }
   ]
 
   // {title: 'TESTES', component: 'TestesPage'}

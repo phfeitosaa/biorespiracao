@@ -12,23 +12,23 @@
 
 <ion-content padding>
 
-<img src="../../assets/img/mitocondria.png">
+<img src="../../assets/img/mitocondria.png" #img1 (click)="presentImage(img1)">
 <a (click)="citoplasma = !citoplasma;"><h5>1. Citoplasma</h5></a>
 <p [hidden]="!citoplasma">Glicólise: Série de dez reações químicas que fragmentam a glicose originando no final do processo duas moléculas de piruvato (C₃H₄O₃):  . Ocorre no citoplasma.</p>
 
 <a (click)="mitocondria = !mitocondria; fosforilacao = false; mitocondria2 = false; atp = false; atpgif = false;"><h5>2. Mitocôndria</h5></a>
-<img src="../../assets/img/mitocondria2.png" [hidden]="!mitocondria">
+<img src="../../assets/img/mitocondria2.png" [hidden]="!mitocondria" #img2 (click)="presentImage(img2)">
 <p [hidden]="!mitocondria">Ciclo de Krebs ou do ácido cítrico: Ciclo que envolve oito reações químicas que completam a quebra metabólica da glicose. Ocorre no interior das mitocôndrias.</p>
 
 <a (click)="fosforilacao = !fosforilacao; mitocondria2 = false; atp = false; atpgif = false;"><h5 [hidden]="!mitocondria">3. Membrana interna com a ATP sintetase</h5></a>
 <p [hidden]="!fosforilacao">Fosforilação oxidativa: Produção de ATP usando a energia derivada de reações redox de uma cadeia transportadora de elétrons. Ocorre na membrana interna da 
 <a (click)="mitocondria2 = !mitocondria2;">mitocôndria</a>.</p>
-<img src="../../assets/img/mitocondria.gif" [hidden]="!mitocondria2">
+<img src="../../assets/img/mitocondria.gif" [hidden]="!mitocondria2" #img3 (click)="presentImage(img3)">
 <br>
 <a (click)="atp = !atp; atpgif = false;"><h5 [hidden]="!fosforilacao">4. ATP Sintase</h5></a>
 <p [hidden]="!atp">Local aonde ocorre a passagem de prótons do espaço intermembrana para a matriz mitocondrial produzindo ATP devido as diferenças de gradiente de concentração maior no espaço intermembrana. O componente F₀ está incrustrado na membrana interna da mitocôndria enquanto que o componente F₁ está na matriz mitocondrial.</p>
 <a (click)="atpgif = !atpgif;" [hidden]="!atp">Animação</a>
-<img src="../../assets/img/atp-sintase.gif" [hidden]="!atpgif">
+<img src="../../assets/img/atp-sintase.gif" [hidden]="!atpgif" #img4 (click)="presentImage(img4)">
 
 <br>
 <br>
