@@ -54,11 +54,11 @@ var map = {
 		12
 	],
 	"../pages/detalhada-ciclo-krebs/detalhada-ciclo-krebs.module": [
-		451,
+		450,
 		11
 	],
 	"../pages/detalhada-fosforilacao/detalhada-fosforilacao.module": [
-		450,
+		451,
 		10
 	],
 	"../pages/detalhada-glicose/detalhada-glicose.module": [
@@ -82,11 +82,11 @@ var map = {
 		5
 	],
 	"../pages/geral-resp-aerobica/geral-resp-aerobica.module": [
-		458,
+		457,
 		4
 	],
 	"../pages/list-master/list-master.module": [
-		457,
+		458,
 		3
 	],
 	"../pages/mitocondria/mitocondria.module": [
@@ -433,15 +433,15 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/bibliografia/bibliografia.module#BibliografiaPageModule', name: 'BibliografiaPage', segment: 'bibliografia', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/context-resp-aerobica/context-resp-aerobica.module#ContextRespAerobicaPageModule', name: 'ContextRespAerobicaPage', segment: 'context-resp-aerobica', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/definicoes-importantes/definicoes-importantes.module#DefinicoesImportantesPageModule', name: 'DefinicoesImportantesPage', segment: 'definicoes-importantes', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/detalhada-fosforilacao/detalhada-fosforilacao.module#DetalhadaFosforilacaoPageModule', name: 'DetalhadaFosforilacaoPage', segment: 'detalhada-fosforilacao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/detalhada-ciclo-krebs/detalhada-ciclo-krebs.module#DetalhadaCicloKrebsPageModule', name: 'DetalhadaCicloKrebsPage', segment: 'detalhada-ciclo-krebs', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/detalhada-fosforilacao/detalhada-fosforilacao.module#DetalhadaFosforilacaoPageModule', name: 'DetalhadaFosforilacaoPage', segment: 'detalhada-fosforilacao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/detalhada-glicose/detalhada-glicose.module#DetalhadaGlicosePageModule', name: 'DetalhadaGlicosePage', segment: 'detalhada-glicose', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/etapas-resp-aerobica/etapas-resp-aerobica.module#EtapasRespAerobicaPageModule', name: 'EtapasRespAerobicaPage', segment: 'etapas-resp-aerobica', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/geral-cadeia-transp/geral-cadeia-transp.module#GeralCadeiaTranspPageModule', name: 'GeralCadeiaTranspPage', segment: 'geral-cadeia-transp', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/geral-ciclo-krebes/geral-ciclo-krebes.module#GeralCicloKrebesPageModule', name: 'GeralCicloKrebesPage', segment: 'geral-ciclo-krebes', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/geral-glicose/geral-glicose.module#GeralGlicosePageModule', name: 'GeralGlicosePage', segment: 'geral-glicose', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/list-master/list-master.module#ListMasterPageModule', name: 'ListMasterPage', segment: 'list-master', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/geral-resp-aerobica/geral-resp-aerobica.module#GeralRespAerobicaPageModule', name: 'GeralRespAerobicaPage', segment: 'geral-resp-aerobica', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/list-master/list-master.module#ListMasterPageModule', name: 'ListMasterPage', segment: 'list-master', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/mitocondria/mitocondria.module#MitocondriaPageModule', name: 'MitocondriaPage', segment: 'mitocondria', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/producao-atp/producao-atp.module#ProducaoAtpPageModule', name: 'ProducaoAtpPage', segment: 'producao-atp', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sumario/sumario.module#SumarioPageModule', name: 'SumarioPage', segment: 'sumario', priority: 'low', defaultHistory: [] },
